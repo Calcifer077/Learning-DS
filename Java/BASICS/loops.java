@@ -9,6 +9,9 @@ public class Main{
         }
     }
 }
+.........................................................................................
+.........................................................................................
+.........................................................................................
 //Program to sum first 10 integers.
 import java.util.Scanner;
 public class Main{
@@ -22,3 +25,38 @@ public class Main{
         System.out.println(sum);
     }
 }
+.........................................................................................
+.........................................................................................
+.........................................................................................
+//USe of continue satement.
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Use of continue statement:"); 
+        for(int i = 0; i< 10;i++){
+            if((i % 2)==0){
+                continue;
+            }
+            System.out.println(i + " ");
+        }
+    }
+}
+.........>
+//Use of break statment:
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Use of continue statement:"); 
+        for(int i = 0; i< 10;i++){
+            if(i==6){
+                break;
+            }
+            System.out.println(i + " ");
+        }
+    }
+}
+.........................................................................................
+.........................................................................................
+.........................................................................................
