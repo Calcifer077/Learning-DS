@@ -20,3 +20,25 @@ class Main2{
         System.out.println("Fun called");
     }
 }
+
+
+import java.util.Scanner;
+
+class Student{
+        int uid;
+        int section;
+}
+public class Main{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        Student obj = new Student();
+        System.out.println("Enter student's UID: ");
+        obj.uid = in.nextInt();
+        System.out.println("Enter Student Section: ");
+        obj.section = in.nextInt();
+        
+        System.out.println("uid of Student is: " + obj.uid);
+        System.out.println("Section of Student is: " + obj.section);
+        in.close();
+    }
+}
