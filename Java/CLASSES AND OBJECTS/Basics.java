@@ -20,15 +20,16 @@ class Main2{
         System.out.println("Fun called");
     }
 }
-
-
-import java.util.Scanner;
+.........................................................................................
+.........................................................................................
+.........................................................................................
+import java.util.Scanner;//Importing Scanner package for taking Input.
 
 class Student{
         int uid;
         int section;
 }
-public class Main{
+public class Main{//The name of the file should be " Main " as the execution of the code take place here.
     public static void main(String args[]){
         Scanner in = new Scanner(System.in);
         Student obj = new Student();
