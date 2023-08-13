@@ -43,3 +43,24 @@ public class Main{//The name of the file should be " Main " as the execution of 
         in.close();
     }
 }
+.........................................................................................
+.........................................................................................
+.........................................................................................
+import java.util.Scanner;
+
+class Rectangle{
+    int width;
+    int length;
+}
+
+class Main{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        Rectangle obj = new Rectangle();
+        System.out.println("Enter the width of the Rectangle: ");
+        obj.width = in.nextInt();
+        System.out.println("Enter the length of the Rectangle: ");
+        obj.length = in.nextInt();
+        System.out.println("The area of the Rectangle is: " + (obj.width * obj.length));
+    }
+}
