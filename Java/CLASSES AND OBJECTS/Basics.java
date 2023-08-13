@@ -64,3 +64,32 @@ class Main{
         System.out.println("The area of the Rectangle is: " + (obj.width * obj.length));
     }
 }
+.........................................................................................
+.........................................................................................
+.........................................................................................
+import java.util.Scanner;
+
+class Rectangle{
+    int width;
+    int length;
+    
+    int perimeter(){
+        return (2 * (length + width));
+    }
+    int area(){
+        return (length * width);
+    }
+}
+
+class Main{
+    public static void main(String args[]){
+        Scanner in = new Scanner(System.in);
+        Rectangle obj = new Rectangle();
+        System.out.println("Enter the width of the Rectangle: ");
+        obj.width = in.nextInt();
+        System.out.println("Enter the length of the Rectangle: ");
+        obj.length = in.nextInt();
+        System.out.println("The perimeter of the Rectangle is: " + obj.perimeter());
+        System.out.println("The area of the Rectangle is: " + obj.area());
+    }
+}
