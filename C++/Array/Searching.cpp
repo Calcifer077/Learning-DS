@@ -1,3 +1,9 @@
+//There are two methods of searching for a element.
+//	1. Linear Search -> In this type of search array transversal is used to throung the array in a linear way starting from index 0.
+//				It can be used for both Sorted and Unsorted array.
+//	2. Binary Search -> In this type of search array is divided in two halfs anf it is checked in which half does the element lie.
+//				Accordingly, The searching is done.
+//				It can be only done on Sorted array.
 //To search for a particular element in an array.
 #include<iostream>
 using namespace std;
@@ -19,6 +25,9 @@ int main(){
 	cout<<"Element found at "<<result+1;
 	return 0;
 }
+.........................................................................................
+.........................................................................................
+.........................................................................................
 //Using function for the same thing as above:
 #include<iostream>
 using namespace std;
@@ -48,8 +57,9 @@ int main(){
 	}
 	return 0;
 }
-
-
+.........................................................................................
+.........................................................................................
+.........................................................................................
 #include<iostream>
 using namespace std;
 
