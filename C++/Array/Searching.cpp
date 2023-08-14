@@ -72,7 +72,7 @@ int binarysearch(int arr[], int size, int key){
 		if(arr[mid] == key){
 			return mid;
 		}
-		if(arr[mid < key]){
+		if(arr[mid] < key){
 			low = mid + 1;
 		}
 		else{
