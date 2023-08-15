@@ -1,4 +1,5 @@
 //Sorting is arranging of element in a particular order.
+...............................SELECTION SORT............................
 //The below given program is of selection sort.
 //It says that find the minimum element in your unsoerted array and swap it with element at begining.
 #include<iostream>
@@ -22,7 +23,13 @@ int main(){
 	 
 	return 0;
 }
-
+.........................................................................................
+...................................BUBBLE SORT...........................................
+.........................................................................................
+//THe below given is Bubble sort.
+//According to this algorithm we repeatedly swap two adjacent elements if they are in wrong order. Meaning if the element that comes first
+//	is larger than the element that comes later on.
+//	THis algo runs for " size - 1 " iterations before we get our sorted array.	
 #include<iostream>
 using namespace std;
 
