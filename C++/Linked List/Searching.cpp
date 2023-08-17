@@ -41,7 +41,8 @@ void display(node* head){
 	cout<<"NULL"<<endl;
 }
 
-bool search(node* head, int key){
+bool search(node* head, int key){//This will return the bool value which means that if it is true it will return 1 and if not
+				// it will return 0.
 	node* temp = head;
 	while(temp != NULL){
 		if(temp -> data == key){
@@ -51,6 +52,7 @@ bool search(node* head, int key){
 	}
 	return false;
 }
+
 int main(){
 	node* head = NULL;
 	insertAttail(head, 1);
