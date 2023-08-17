@@ -5,6 +5,7 @@ class node{//node is the pointer that points to the next location.
 	public:
 	//A node is the basic structure of the linked list. It stores data as value than pointer.
 	//The pointer points out the address of the next value.
+	//Empty node can't be present in linked list.
 		int data;//It is the value stored in the Linked list.
 		node* next;
 		
