@@ -7,4 +7,6 @@ Linked list is a linear data structure which stores data in non-contiguous memor
   2. Non-Contiguous memory
   3. Inserting or deleting is easy.
 
-The basic structure of a linked list is a node which is like a pair which contains a value and a pointer which points to the next list.
+The basic structure of a linked list is a node which is like a pair which contains a value and a pointer which points to the next node.
+The first node is known as the Head and the last is known as Tail.
+The Pointer of tail is NULL.
