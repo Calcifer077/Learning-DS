@@ -93,3 +93,35 @@ class Main{
         System.out.println("The area of the Rectangle is: " + obj.area());
     }
 }
+.........................................................................................
+.........................................................................................
+.........................................................................................
+//program to give Rectangle area.
+import java.util.Scanner;
+class Rectangle{
+    
+    int a,b;
+    void setvalue(int x, int y){
+        a = x;
+        b = y;
+    }
+    int result(){
+        return (a * b);
+    }
+}
+
+class Main{
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter the the two sides of Rectangle: ");
+        int a = in.nextInt();
+        int b = in.nextInt();
+        Rectangle obj = new Rectangle();
+        obj.setvalue(a, b);
+        System.out.println(obj.result());
+    }
+}
+
+.........................................................................................
+.........................................................................................
+.........................................................................................
