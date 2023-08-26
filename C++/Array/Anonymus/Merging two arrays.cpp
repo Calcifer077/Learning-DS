@@ -1,3 +1,4 @@
+//Take input of two arrays and merge them then sort them.
 #include<iostream>
 using namespace std;
 
