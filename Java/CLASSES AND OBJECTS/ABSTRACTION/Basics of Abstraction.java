@@ -2,7 +2,7 @@
 //Example -> Working of a car. We don't knoq about each and every details of the car but we know the end results which is its motion.
 abstract class Animal{//declaring abstract class which is neccassart to acieve abstraction.
     public abstract void animalSound();//abstract method -> doesn't have body in the parent class but will have in the subclass.
-    
+                                       //cannot create its object in the Main method.
     public void sleep(){//normal method with its body.
         System.out.println("Sleeping!!!!!!");
     }
