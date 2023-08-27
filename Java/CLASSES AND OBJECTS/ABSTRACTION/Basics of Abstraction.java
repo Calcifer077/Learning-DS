@@ -21,6 +21,9 @@ class Main{
         obj.sleep();
     }
 }
+.........................................................................................
+.........................................................................................
+.........................................................................................
 abstract class Animal{
     private String name;
     
@@ -55,7 +58,7 @@ class Cat extends Animal{
 
 class Main{
     public static void main(String[] args){
-        Animal myDog = new Dog("Buddy");
+        Animal myDog = new Dog("Buddy");//Can also declare objects this way.
         Animal mycat = new Cat("Fluffy");
         myDog.makeSound();
         mycat.makeSound();
