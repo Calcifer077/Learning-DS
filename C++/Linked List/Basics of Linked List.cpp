@@ -29,7 +29,7 @@ void insertAttail(node* &head, int val){//It will add the value at the last posi
 		head = n;
 		return;
 	}
-	node* temp = head;
+	node* temp = head;//Is the iterator in the case of Linked List.
 	while(temp->next!=NULL){
 		temp = temp->next;
 	}
