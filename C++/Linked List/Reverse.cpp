@@ -38,12 +38,14 @@ node* reverse(node* &head){
 	node* nextptr;
 	
 	while(currptr != NULL)	{
-		nextptr = currptr->next;
-		currptr->next = prevptr;
+		nextptr = currptr->next;//Store the next node in the nextptr.
+		currptr->next = prevptr;//reverse the current node's next pointer.
 		
+		//Move prevptr and currptr one step forward.
 		prevptr = currptr;
 		currptr = nextptr;
 	}
+	//When the loop finishes currptr will be pointing to NULL and prevptr will be pointing to the new head.
 	return prevptr;//new head.
 }
 
