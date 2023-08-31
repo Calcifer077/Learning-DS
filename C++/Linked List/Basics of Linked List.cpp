@@ -24,7 +24,7 @@ void insertAthead(node* &head, int val){//It will add the value at the first pos
 }
 
 void insertAttail(node* &head, int val){//It will add the value at the last position.
-	node* n = new node(val)
+	node* n = new node(val);
 	
 	if(head == NULL){
 		head = n;
