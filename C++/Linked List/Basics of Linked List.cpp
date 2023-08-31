@@ -1,3 +1,4 @@
+//Traversing should be done in the linked list.
 #include<iostream>
 using namespace std;
 
