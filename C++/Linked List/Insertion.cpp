@@ -12,7 +12,7 @@ class node{
     }
 };
 
-node *insertpos(node *head, int position, int data){
+node *insertpos(node *head, int position, int data){//It will not insert element at the first position.
     node *n = new node(data);
 
     if(position == 1){
@@ -21,15 +21,12 @@ node *insertpos(node *head, int position, int data){
     }
 
     node *temp = head;
-
     for(int i = 1;i <= position-2 && temp != NULL; i++){
         temp = temp -> next;
     }
-
     if(temp == NULL){
         return head;
     }
-
     n -> next = temp -> next;
     temp -> next = n;
     return head;
