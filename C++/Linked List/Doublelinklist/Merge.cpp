@@ -1,3 +1,7 @@
+//Time complexity = O(m*n);
+//Merging two linked list and sorting them.
+
+//Iterative method.
 #include<iostream>
 using namespace std;
 
@@ -99,7 +103,10 @@ int main(){
 
     return 0;
 }
-
+.........................................................................................
+.........................................................................................
+.........................................................................................
+//Recursive method.
 #include<iostream>
 using namespace std;
 
