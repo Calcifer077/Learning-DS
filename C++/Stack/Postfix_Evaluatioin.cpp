@@ -1,3 +1,4 @@
+//Time complexity -> O(l) 'l' is the length of the string.
 #include<iostream>
 #include<stack>
 #include<math.h>
@@ -6,6 +7,7 @@ using namespace std;
 int postEvaluatioin(string s){
     stack<int> st;
     
+    //go from left to right.
     for(int i = 0; i<s.length(); i++){
         if(s[i] >= '0' && s[i] <= '9'){
             st.push(s[i] - '0');//If we subtract the ascii value of 0 from any character we will get integer.
