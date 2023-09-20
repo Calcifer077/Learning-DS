@@ -9,7 +9,7 @@ int prefixEvaluatioin(string s){
     
     for(int i = s.length() - 1; i >= 0; i--){
         if(s[i] >= '0' && s[i] <= '9'){
-            st.push(s[i] - '0');
+            st.push(s[i] - '0');//Will convert the character to integer when we subtract ascii value from the char.
         }
         else{
             int op1 = st.top();
@@ -43,7 +43,7 @@ int prefixEvaluatioin(string s){
             }
         }
     }
-    return st.top();
+    return st.top();//will return the result.
 }
 
 int main(){
