@@ -6,7 +6,8 @@ using namespace std;
 
 int prefixEvaluatioin(string s){
     stack<int> st;
-    
+
+    //go from right to left.
     for(int i = s.length() - 1; i >= 0; i--){
         if(s[i] >= '0' && s[i] <= '9'){
             st.push(s[i] - '0');//Will convert the character to integer when we subtract ascii value from the char.
