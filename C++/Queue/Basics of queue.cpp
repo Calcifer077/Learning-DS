@@ -1,21 +1,24 @@
+//.................Implementation using array................
 #include<iostream>
 using namespace std;
 
-#define n 20
+#define n 20//size of array
 class Queue{
-    int *arr;
-    int front;
-    int back;
+    int *arr;// array for implementation
+    //creating to pointers
+    int front;//this will point to the first element of the array or the queue.
+    int back;//It will point to the last element of the queue.
     
     public:
     Queue(){
         arr = new int[n];
+        //while initializing do it with -1.
         front = -1;
         back = -1;
     }
     
-    void push(int x){
-        if(back == n - 1){
+    void push(int x){//given a element to push into the queue.
+        if(back == n - 1){// if the queue has reached the last element.
             cout<<"queue overflow!"<<endl;
             return;
         }
