@@ -92,7 +92,7 @@ int main(){
 #include<iostream>
 using namespace std;
 
-class node{
+class node{//crating a node to implement it using linked list.
     public:
     int data;
     node* next;
@@ -103,25 +103,27 @@ class node{
     }
 };
 
-class Queue{
+class Queue{//creating a Queue that can implement queue functions.
+    //These two will point to the front and back of the queue.
     node* front;
     node* back;
     
     public:
     Queue(){
+        //Both will intially point to NULL.
         front = NULL;
         back = NULL;
     }
     
     void push(int x){
-        node* n = new node(x);
+        node* n = new node(x);//creating a node 'n' with value 'x'.
         
-        if(front == NULL){
+        if(front == NULL){//If queue is empty.
             back = n;
             front = n;
             return;
         }
-        back->next = n;
+        back->next = n;//If it is not empty add value to the next of back and iterate it.
         back = n;
     }
     
@@ -131,10 +133,10 @@ class Queue{
             return;
         }
         
-        node* todelte = front;
-        front = front->next;
+        node* todelte = front;//create a node that will point to front.
+        front = front->next;//Iterate front to the next element.
         
-        delete todelte;
+        delete todelte;//delete todelete
     }
     int peek(){
         if(front == NULL){
@@ -164,5 +166,40 @@ int main(){
     q.pop();
     cout<<q.peek()<<endl;
     cout<<q.empty();
+    return 0;
+}
+.........................................................................................
+.........................................................................................
+.........................................................................................
+#include<bits/stdc++.h>
+using namespace std;
+
+class Queue{
+    stack<int> s1;
+    stack<int> s2;
+    
+    public:
+    void push(int x){
+        s1.push(x);
+    }
+    int pop(){
+        if(s1.empty() && s2.empty()){
+            cout<<"Queue is empty"<<endl;
+            return -1;
+        }
+        if(s2.empty()){
+            while(!s1.empty()){
+                s2.push(s1.top());
+                s1.pop();
+            }
+        }
+        int topval = s2.top();
+        s2.pop();
+        return topval;
+    }
+};
+
+int main(){ 
+    
     return 0;
 }
