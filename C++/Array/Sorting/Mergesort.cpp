@@ -41,9 +41,9 @@ void merge(int arr[], int l, int mid, int r){
 		j++;
 	}
 }
-void mergeSort(int arr[], int l , int r){
+void mergeSort(int arr[], int l , int r){//This function will break the array into subparts until it can't be broken further.
 	
-	if(l < r){
+	if(l < r){//break it until the left and right side cross each other.
 		
 		int mid = (l + r)/2;
 		mergeSort(arr, l , mid);
