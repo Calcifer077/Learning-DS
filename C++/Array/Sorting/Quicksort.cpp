@@ -1,3 +1,8 @@
+//Time complexity-> Best case - nlogn
+//                  Average case - nlogn
+//                  Worst case - n^2
+
+//It is not a stable algorithm.
 #include<iostream>
 using namespace std;
 
