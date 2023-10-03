@@ -11,3 +11,6 @@ Create ----t.start-----> Runnable ----JVM  Allocate processor ----> Running ----
                             |
                         Non- Runnable
 
+There are two ways to create a thread:
+1. By extending thread class.
+2. By using runnable interface.
