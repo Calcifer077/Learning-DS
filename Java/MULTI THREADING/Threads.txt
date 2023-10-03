@@ -1,3 +1,13 @@
 Threads:
 A thread is a lightweight sub-process, the smallest unit of processing. 
 It is a seperate path of execution.
+
+Threads are independent. If there occurs exception in one thread, it doesn't affect other threads. It uses a shared memomry area.
+
+Life cycle of a thread:->
+
+Create ----t.start-----> Runnable ----JVM  Allocate processor ----> Running ----> Dead
+                            ^
+                            |
+                        Non- Runnable
+
