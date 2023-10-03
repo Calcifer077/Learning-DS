@@ -179,10 +179,10 @@ class Queue{
     stack<int> s2;
     
     public:
-        void push(int x){
+        void push(int x){//O(1)
             s1.push(x);
         }
-        int pop(){
+        int pop(){//O(n)
             if(s1.empty() && s2.empty()){
                 cout<<"Queue is empty."<<endl;
                 return -1;
