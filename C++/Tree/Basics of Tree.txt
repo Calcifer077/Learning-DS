@@ -1,0 +1,14 @@
+Tree is a hierarchial tree data structure in whih data is stored in levels.
+
+It is derived from a real life tree.
+As in a real life tree the most basic part is roots(or the first part) from which various branches are made towads the top.
+The last part that exists in this hierarchy is the leafs.
+
+The same is applied in the 'Tree' used in a computer just in opposite order.
+The root is at the top whereas the leaves are are at the bottom.
+
+            1//This is the root.
+           /  \->Branches
+          2    3//These are the children of the root(1).
+        / | \
+       4  5  6//These are the children of 2 and are called leaves as they are the last nodes in the structure.
