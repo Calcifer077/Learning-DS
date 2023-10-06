@@ -1,7 +1,7 @@
     ........METHOD I...........
 #include<bits/stdc++.h>
 using namespace std;
-//Making push method costly.
+//Making push operation costly.
 
 class Stack{
     int N;//Size of stack
@@ -57,7 +57,7 @@ using namespace std;
 
 class Stack{
     int N;
-    queue<int> q1;
+    queue<int> q1;//It is the result.
     queue<int> q2;
     
     public:
@@ -66,10 +66,12 @@ class Stack{
         }
         
         void pop(){
-            if(q1.empty()){
+            if(q1.empty()){//If there are no elements in the Queue it will mean the queue is empty.
                 return;
             }
-            while(q1.size() != 1){
+            while(q1.size() != 1){//While there is only one element in the queue.
+                                  //That last element will be the element to pop
+                                  //We will be storing all the popped elements in q2 and swap them at last to see the result.
                 q2.push(q1.front());
                 q1.pop();
             }
