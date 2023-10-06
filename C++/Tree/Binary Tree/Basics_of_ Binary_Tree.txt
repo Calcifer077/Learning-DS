@@ -1,0 +1,7 @@
+It is a special kind of tree in which one node can have at max only two children.
+
+            1->Root
+           / \->Branches
+          2   3->Children of root. 2 is the left child whereas 3 is the right child.
+         / \
+        4   5
