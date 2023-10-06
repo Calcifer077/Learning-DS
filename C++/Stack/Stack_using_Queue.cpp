@@ -86,7 +86,8 @@ class Stack{
             N++;
         }
         
-        int top(){
+        int top(){//The top value will be the value on the last of q1.
+                //To obtain that value we will have to empty the queue until the last element and store it in a 'ans' variable.
             if(q1.empty()){
                 return -1;
             }
@@ -94,10 +95,10 @@ class Stack{
                 q2.push(q1.front());
                 q1.pop();
             }
-            int ans = q1.front();
-            q2.push(ans);
+            int ans = q1.front();//Storing that 'ans' here.
+            q2.push(ans);//Push this element into q2 to maintain original order.
             
-            queue<int> temp = q1;
+            queue<int> temp = q1;//swapping them.
             q1 = q2;
             q2 = temp;
             
