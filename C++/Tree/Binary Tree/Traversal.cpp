@@ -28,8 +28,8 @@ class Node{
     }
 };
 
-void preorder(Node* root){
-    if(root == NULL){
+void preorder(Node* root){//Will take input of root
+    if(root == NULL){//If no root is present or we have visited every node return.
         return;
     }
     cout<<root->data<<" ";
