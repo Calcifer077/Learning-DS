@@ -1,0 +1,7 @@
+      Final keyword:->
+It is used to restrict the user.
+It can be used in many contexts:
+1. Variable ---> To create constant variable
+2. Method ---> To prevent method overriding
+3. classes ---> To prevent inheritance
+
