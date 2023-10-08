@@ -1,3 +1,7 @@
+//These two classes belong to the java.io package.
+//This two classes are used to read and write a stream of character.
+//Writer writes the data at one end of the Pipe, and the Reader reads the data from the other end. 
+//Usually, the Reader and Writer operate asynchronously with the help of threads.
 import java.io.PipedReader;//Importing this to read from a pipe
 import java.io.PipedWriter;//Importing this to write in a pipe
   
