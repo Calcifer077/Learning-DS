@@ -125,3 +125,32 @@ class Main{
 .........................................................................................
 .........................................................................................
 .........................................................................................
+//Copy constructor
+import java.util.Scanner;
+
+class First{
+        int id;
+        String name;
+
+        First(int id, String name){
+                this.id = id;
+                this.name = name;
+        }
+
+        First(First o){
+                id = o.id;
+                name = o.name;
+        }
+        void display(){
+                System.out.println("The id of the student is: " + id);
+                System.out.println("The name of the student is: " + name);
+        }
+        public static void main(String[] args){
+                Scanner In = new Scanner(System.in);
+                First o1 = new First(12, "Something");
+                First o2 = new First(o1);
+                o1.display();
+                o2.display();
+                In.close();
+        }
+}
