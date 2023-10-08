@@ -7,7 +7,7 @@ void revese(string s){
     
     for(int i = 0; i <s.length(); i++){
         string word = "";
-        while(s[i] != ' ' && i<s.length()){
+        while(s[i] != ' ' && i<s.length()){//This while loop will work until we encounter a ' ' or we reach the end of the string.
             word += s[i];
             i++;
         }
