@@ -24,3 +24,24 @@ class FileInfo {
         }  
     }  
 } 
+
+
+
+import java.io.FileInputStream;//To read from a program.
+
+class First{
+        public static void main(String[] args){
+                try{    //For it to work 'Untitled.txt' should exists in the system.
+                        FileInputStream fin = new FileInputStream("Untitled.txt");//Creating an object of FileInputStream.
+                        int i = 0;//It will store the data and .read() method returns in the form of int.
+                        while((i = fin.read()) != -1){//fin.read() is used to read from a file. It reads in the form of bytes.
+                                                      //If the end of the file is reached -1 is returned.
+                                System.out.print((char) i);//Used to convert int into char
+                        }
+                        fin.close();
+                }
+                catch(Exception e){
+                        System.out.println(e);
+                }
+        }
+}
