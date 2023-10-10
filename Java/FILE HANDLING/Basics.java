@@ -45,3 +45,26 @@ class First{
                 }
         }
 }
+.........................................................................................
+.........................................................................................
+.........................................................................................
+//To read all of the file.
+import java.io.FileInputStream;
+
+class First{
+        public static void main(String[] args) {
+                try{
+                        FileInputStream f1 = new FileInputStream("Untitled.txt");
+                        int i;
+                        while((i = f1.read()) != -1){
+                                System.out.print((char)i);
+                                
+                        }
+                        f1.close();
+                        
+                }
+                catch(Exception e){
+                        System.out.println(e);
+                }
+        }
+}
