@@ -10,3 +10,18 @@ It can be used in many contexts:
 FileInputStream is used to read bytes from a file. It can also be used to read characters from a file.
 
 To read characters from a file FileReader class is reccommended.
+.........................................................................................
+.........................................................................................
+.........................................................................................
+Stream represents the pipleline through which data will flow and the funcitons to operate on data.
+
+ByteArrayInputStream is used to read byte array as a input stream.
+ByteArrayOutputStream is used to write byte array in more than one file at a time.
+
+PipeWriter and PipedReader are used to read a stream of characters.
+These two classes are used in pairs.
+
+Multitasking ---> It is the process when CPU allocate CPU time to different processes to complete their execution.
+CPU divides specific time slices for each processes to execute their block of code.
+
+Multithreading ---> It is the process in which OS divides a single process into multiple threads which can execute concurrently.
