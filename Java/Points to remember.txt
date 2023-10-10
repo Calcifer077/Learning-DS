@@ -25,3 +25,12 @@ Multitasking ---> It is the process when CPU allocate CPU time to different proc
 CPU divides specific time slices for each processes to execute their block of code.
 
 Multithreading ---> It is the process in which OS divides a single process into multiple threads which can execute concurrently.
+
+Synchronization is used when we have multiple threads trying to access a single resource.
+The main pupose of Syncronization is to overcome the problem of multithreading when multiple threads try to access a single resource.
+
+Real life example of Synchronization:->
+Suppose three people have a joint account in a bank and all three try to access the money at the same time.
+Synchronization can be achieved by two ways:
+1. Method level
+2. Block level
