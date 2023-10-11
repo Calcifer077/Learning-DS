@@ -18,7 +18,7 @@ Stream represents the pipleline through which data will flow and the funcitons t
 ByteArrayInputStream is used to read byte array as a input stream.
 ByteArrayOutputStream is used to write byte array in more than one file at a time.
 
-PipeWriter and PipedReader are used to read a stream of characters.
+PipedWriter and PipedReader are used to read a stream of characters.
 These two classes are used in pairs.
 
 Multitasking ---> It is the process when CPU allocate CPU time to different processes to complete their execution.
