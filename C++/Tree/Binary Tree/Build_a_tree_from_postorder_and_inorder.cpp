@@ -1,7 +1,8 @@
+//In making of a tree from postorder and inorder we will start from the last.
 #include<iostream>
 using namespace std;
 
-class Node{
+class Node{//Basic structure of a binary tree.
     public:
         int data;
         Node* left;
@@ -14,7 +15,7 @@ class Node{
         }
 }; 
 
-int search(int inorder[], int start, int end, int curr){
+int search(int inorder[], int start, int end, int curr){//Function to search for 'cuur' given from 'buldtree' function.
     for(int i = start; i<=end; i++){
         if(inorder[i] == curr){
             return i;
@@ -23,7 +24,7 @@ int search(int inorder[], int start, int end, int curr){
     }
     return -1;
 }
-Node* buildtree(int postorder[], int inorder[], int start, int end){
+Node* buildtree(int postorder[], int inorder[], int start, int end){//Function to build a tree.
     static int idx = end;
     if(start > end){
         return NULL;
@@ -31,15 +32,15 @@ Node* buildtree(int postorder[], int inorder[], int start, int end){
     int curr = postorder[idx];
     idx--;
     
-    Node* root = new Node(curr);
+    Node* root = new Node(curr);//creating a root for the new tree which will be initialized with value at curr.
     
-    if(start == end){//left and right not left.
+    if(start == end){//nothing left to buld.
         return root;
     }
     
-    int pos = search(inorder, start, end, curr);
-    root->right = buildtree(postorder, inorder, pos+1, end);
-    root->left = buildtree(postorder, inorder, start, pos-1);
+    int pos = search(inorder, start, end, curr);//searching for the position of curr.
+    root->right = buildtree(postorder, inorder, pos+1, end);//building right tree.
+    root->left = buildtree(postorder, inorder, start, pos-1);//building left tree.
     
     return root;
 }
