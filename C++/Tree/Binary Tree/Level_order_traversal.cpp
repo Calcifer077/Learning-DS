@@ -24,13 +24,13 @@ void printlevelorder(Node* root){//Function to print levelorder.
     
     queue<Node*> q;//Using queue to implement this function.
     q.push(root);//Pushing the root in the queue.
-    q.push(NULL);
+    q.push(NULL);//Marks the end of level 0.
     
     while(!q.empty()){
         Node * newroot = q.front();
         q.pop();
         if(newroot != NULL){
-            cout<<newroot->data<<" ";
+            cout<<newroot->data<<" ";//If it is not a 'NULL' ptr, print it.
             if(newroot->left){
                 q.push(newroot->left);
             }
@@ -38,7 +38,7 @@ void printlevelorder(Node* root){//Function to print levelorder.
                 q.push(newroot->right);
             }
         }
-        else if(!q.empty()){
+        else if(!q.empty()){//Marks the end of a level.
             q.push(NULL);
         }
     }
