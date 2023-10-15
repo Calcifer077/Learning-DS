@@ -45,7 +45,7 @@ Node* buildtree(int postorder[], int inorder[], int start, int end){//Function t
     return root;
 }
 
-void inorderprint(Node* root){
+void inorderprint(Node* root){//To check what we build was right or wrong.
     if(root == NULL){
         return;
     }
@@ -56,9 +56,9 @@ void inorderprint(Node* root){
 int main(){
     int postorder[] = {4,2,5,3,1};
     int inorder[] = {4,2,1,5,3};
-    Node* root = buildtree(postorder, inorder, 0, 4);
+    Node* root = buildtree(postorder, inorder, 0, 4);//Building the tree by giving it neccessary argument.
     
-    inorderprint(root);
+    inorderprint(root);//To check what we build was right or wrong.
     
     return 0;
 }
