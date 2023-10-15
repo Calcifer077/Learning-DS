@@ -1,7 +1,10 @@
+//we will be using queue for the implementation of this program.
+//Insert a root in the queue. Add a 'NULL' at the end of each level.
+//Pop queue and process(add its left and right subtree) it.
 #include<bits/stdc++.h>
 using namespace std;
 
-class Node{
+class Node{//Basic structure of a node in a tree.
     public:
         int data;
         Node* left;
@@ -14,13 +17,13 @@ class Node{
         }
 }; 
 
-void printlevelorder(Node* root){
+void printlevelorder(Node* root){//Function to print levelorder.
     if(root == NULL){
         return;
     }
     
-    queue<Node*> q;
-    q.push(root);
+    queue<Node*> q;//Using queue to implement this function.
+    q.push(root);//Pushing the root in the queue.
     q.push(NULL);
     
     while(!q.empty()){
