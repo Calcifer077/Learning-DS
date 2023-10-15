@@ -1,3 +1,4 @@
+//In case of building a tree from preorder and inorder we will start from the first.
 #include<iostream>
 using namespace std;
 
