@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class Node{
+class Node{//Basic structure of a node.
     public:
     int data;
     Node* left; 
@@ -15,21 +15,21 @@ class Node{
 }; 
 
 int sumatk(Node* root, int k){
-    if(root == NULL){
+    if(root == NULL){//If no node exist.
         return -1;
     }
-    queue<Node*> q;
+    queue<Node*> q;//Creating a queue for implementation.
     q.push(root);
-    q.push(NULL);
+    q.push(NULL);//Marking the end of a level.
     
     int level = 0;
     int sum = 0;
     
-    while(!q.empty()){
-        Node* temp = q.front();
+    while(!q.empty()){//Jab tak queue empty nahi hai.|| Do it until the queue is not empty.
+        Node* temp = q.front();//Creating a 'temp' for holding front of the queue.
         q.pop();
         
-        if(temp != NULL){
+        if(temp != NULL){//If temp is not equal to 'NULL'.
             if(level ==  k){
                 sum += temp->data;
             }
