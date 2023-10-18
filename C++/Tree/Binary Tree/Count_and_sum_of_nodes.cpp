@@ -1,7 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-class Node{
+class Node{//Basic structure of a node.
     public:
     int data;
     Node* left;
@@ -14,15 +14,15 @@ class Node{
     }
 };
 
-int countnodes(Node* root){
-    if(root == NULL){
+int countnodes(Node* root){//Used to count total number of nodes.
+    if(root == NULL){//Base case (The tree is empty)
         return 0;
     }
     return countnodes(root->left) + countnodes(root->right) + 1;
 }
 
-int sumnodes(Node* root){
-    if(root == NULL){
+int sumnodes(Node* root){//Used to sum all the nodes. 
+    if(root == NULL){//Base case
         return 0;
     }
     return sumnodes(root->left) + sumnodes(root->right) + root->data;
