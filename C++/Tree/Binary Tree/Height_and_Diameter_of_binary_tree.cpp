@@ -1,7 +1,8 @@
+//Program to calculate height or depth of a tree
 #include<bits/stdc++.h>
 using namespace std;
 
-class Node{
+class Node{//Basic strucutre of a node.
     public:
     int data;
     Node* left;
@@ -14,14 +15,15 @@ class Node{
     }
 };
 
-int calcHeight(Node* root){
-    if(root == NULL){
+int calcHeight(Node* root){//Function to calculate height
+    if(root == NULL){//If there are no nodes in the tree.
         return 0;
     }
-    int lheight = calcHeight(root->left);
-    int rheight = calcHeight(root->right);
+    int lheight = calcHeight(root->left);//Will calculate the height of the left subtree.
+    int rheight = calcHeight(root->right);//Will calculate the height of the right subtree.
     
     return max(lheight, rheight) + 1;
+    //max will return the maximum of lheight & rheight.
 }
 
 int main(){
