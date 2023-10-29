@@ -18,7 +18,9 @@ public class Main{
 .........................................................................................
 class Main{
 	public static void validata(int age){
-		if(age<18){
+		if(age<18){//The code will not further when this condition is met
+
+			
 			//'throw' keyword is used to throw exception explicitly.
 			//When you throw an exception using the throw keyword, you are essentially 
 			//signaling that something unexpected or erroneous has occurred in your code, 
