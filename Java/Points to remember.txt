@@ -34,3 +34,7 @@ Suppose three people have a joint account in a bank and all three try to access 
 Synchronization can be achieved by two ways:
 1. Method level
 2. Block level
+
+
+Object Cloning ---> Object cloning is a way to create an exact copy of an object. The clone() method is used for implementation.
+                        java.lang.Cloneable interface must be implemented.
