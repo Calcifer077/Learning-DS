@@ -13,10 +13,16 @@ public class Main{
         System.out.println("Outside try and catch block! ");
     }
 }
-
+.........................................................................................
+.........................................................................................
+.........................................................................................
 class Main{
 	public static void validata(int age){
 		if(age<18){
+			//'throw' keyword is used to throw exception explicitly.
+			//When you throw an exception using the throw keyword, you are essentially 
+			//signaling that something unexpected or erroneous has occurred in your code, 
+			//and you want to transfer control to an exception-handling mechanism that can deal with the situation.
 			throw new ArithmeticException("Person is not eligible to vote!");
 		}
 		else{
