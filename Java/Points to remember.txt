@@ -21,6 +21,9 @@ ByteArrayOutputStream is used to write byte array in more than one file at a tim
 PipedWriter and PipedReader are used to read a stream of characters.
 These two classes are used in pairs.
 
+.........................................................................................
+.........................................................................................
+.........................................................................................
 Multitasking ---> It is the process when CPU allocate CPU time to different processes to complete their execution.
 CPU divides specific time slices for each processes to execute their block of code.
 
@@ -35,6 +38,10 @@ Synchronization can be achieved by two ways:
 1. Method level
 2. Block level
 
-
+.........................................................................................
+.........................................................................................
+.........................................................................................
 Object Cloning ---> Object cloning is a way to create an exact copy of an object. The clone() method is used for implementation.
-                        java.lang.Cloneable interface must be implemented.
+                        -> java.lang.Cloneable interface must be implemented.
+                        -> The clone() method saves the extra proessing task for creating the exact copy of an object.If we perform it by                            using the 'new' keyword, it will take a lot of pocessing time.
+                        
