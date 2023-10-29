@@ -13,3 +13,18 @@ public class Main{
         System.out.println("Outside try and catch block! ");
     }
 }
+
+class Main{
+	public static void validata(int age){
+		if(age<18){
+			throw new ArithmeticException("Person is not eligible to vote!");
+		}
+		else{
+			System.out.println("Person is eligible to vote");
+		}
+	}
+	public static void main(String[] args) {
+		validata(13);
+		System.out.println("Rest of the code!");
+	}
+}
