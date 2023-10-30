@@ -67,16 +67,19 @@ int calcHeight(Node* root){//O(N)
     
     return max(lheight, rheight) + 1;
 }
-
+//The approach is to calculate the left diameter of the tree and the right diameter of the tree.
+//We will also calculate the height of the tree and will return the sum of left height and right height +1.
+//Finally the value will be returned which will be the maximum in both of the cases.
 int calcdiameter(Node* root){//O(n^2)
     if(root == NULL){
         return 0;
     }
-    int lheight = calcHeight(root->left);
-    int rheight = calcHeight(root->right);
+    int lheight = calcHeight(root->left);//Calculating height of left subtree.
+    int rheight = calcHeight(root->right);//Calculating height of right subtree.
     
     int currdiameter = lheight + rheight + 1;
-    
+
+    //The below program will dominate when the diamter will not pass thorugh the root.
     int ldiameter = calcdiameter(root->left);
     int rdiameter = calcdiameter(root->right);
     
