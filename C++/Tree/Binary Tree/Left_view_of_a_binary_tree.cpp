@@ -29,7 +29,8 @@ void leftview(Node* root){
         for(int i = 1; i <= n; i++){
             Node* temp = q.front();
             q.pop();
-            
+
+            //if the element is in the first place meaning that it is at the most left position.
             if(i == 1){
                 cout<<temp->data<<" ";
             }
@@ -53,6 +54,6 @@ int main(){
     root->right->left = new Node(6);
     root->right->right = new Node(7);
     
-    leftviewk(root);
+    leftview(root);
     return 0;
 }
