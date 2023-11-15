@@ -59,3 +59,14 @@ Excepion -> A java exception is an object that describes an exceptional conditio
 There are two ways of handling exceptions:
 1. Catch the exception and take corrective action
 2. Throw the exception to the calling method which will force the calling method to handle it.  
+
+Java exception handling is done using try...catch block. The try...catch block are used in pair.
+
+The try statement allows you to define a block of code to be tested for errors while it is being executed.
+The catch statement allows you to define a block of code to be executed, if an error occurs in the try block.
+
+finally -> The finally statement lets you execute code, after try...catch, regardless of the result.
+
+throw -> The throw statement allows you to create custom error. The throw statement is used together with an exception type. There are many exception types available in Java: ArithmeticException, FileNotFoundException, ArrayIndexOutOfBoundsException, SecurityException, etc.
+
+The try...catch block can be nested.
