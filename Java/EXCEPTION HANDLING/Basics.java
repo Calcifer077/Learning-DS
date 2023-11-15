@@ -1,17 +1,23 @@
-public class Main{
-    public static void main(String[] args) {
-        int a = 10;
-        int b = 0;
-        int c;
-        try{
-        c = a / b;
-        System.out.println(c);
-        }
-        catch(ArithmeticException n){
-            System.out.println("Exception found! ");
-        }
-        System.out.println("Outside try and catch block! ");
-    }
+import java.util.Scanner;
+
+class Main{
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		System.out.println("Enter two numbers: ");
+		int a = in.nextInt();
+		int b = in.nextInt();
+
+		try{
+			int result = a / b;
+			System.out.println(result);
+		}
+		catch(Exception e){
+			System.out.println("Something went wrong!");
+		}
+		finally{//Is used when we want to execute a statement regardless of the result of the try...catch block.
+			System.out.println("This is the finally keyword.");
+		}
+	}
 }
 .........................................................................................
 .........................................................................................
@@ -20,7 +26,6 @@ class Main{
 	public static void validata(int age){
 		if(age<18){//The code will not further when this condition is met
 
-			
 			//'throw' keyword is used to throw exception explicitly.
 			//When you throw an exception using the throw keyword, you are essentially 
 			//signaling that something unexpected or erroneous has occurred in your code, 
