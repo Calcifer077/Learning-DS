@@ -35,6 +35,10 @@ Multithreading ---> It is the process in which OS divides a single process into 
 
 Synchronization is used when we have multiple threads trying to access a single resource.
 The main pupose of Syncronization is to overcome the problem of multithreading when multiple threads try to access a single resource.
+When using synchronization, this method will place a lock(a monitor) on an important object or piece code to make sure that only one thread can access it at the same time.
+To protect data, below two things must be done:
+1. Make the variables private.
+2. Synchronize the code that modifies the variable.
 
 Real life example of Synchronization:->
 Suppose three people have a joint account in a bank and all three try to access the money at the same time.
@@ -48,3 +52,10 @@ Object Cloning ---> Object cloning is a way to create an exact copy of an object
                         -> java.lang.Cloneable interface must be implemented.
                         -> The clone() method saves the extra proessing task for creating the exact copy of an object.If we perform it by                            using the 'new' keyword, it will take a lot of pocessing time.
                         
+.........................................................................................
+.........................................................................................
+Excepion -> A java exception is an object that describes an exceptional condition that has occurred in a piece of code. When an exceptional condition arises, an object representing that exception is created and thrown in the method that caused the error. That method may choose to handle the exception itself or pass it on. Either way, at some point, the exception is caught and processed.
+
+There are two ways of handling exceptions:
+1. Catch the exception and take corrective action
+2. Throw the exception to the calling method which will force the calling method to handle it.  
