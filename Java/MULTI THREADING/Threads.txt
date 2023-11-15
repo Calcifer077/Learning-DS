@@ -14,3 +14,11 @@ Create ----t.start-----> Runnable ----JVM  Allocate processor ----> Running ----
 There are two ways to create a thread:
 1. By extending thread class.
 2. By using runnable interface.
+
+
+
+Thread has three methods for its interthread communication.
+wait() -> The wait() method puts a thread in waiting for pool from running state.
+notify() -> The notify() method is used to send a signal to one and only one of the threads that are waiting in that same object's waiting pool.
+notfiyall() -> The method notifyAll() works in the same way as for notify(), only it sends the signal to all of the threads waiting on the object.
+All the above three methods should be called from within  a syncronized context. A thread can't invoke a wait or notify method unless it owns the object's lock.
