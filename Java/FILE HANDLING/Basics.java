@@ -68,3 +68,17 @@ class First{
                 }
         }
 }
+.........................................................................................
+.........................................................................................
+.........................................................................................
+import java.io.FileOutputStream;
+import java.io.IOException;//To handle exceptions.
+
+class Main{
+	public static void main(String[] args) throws IOException{
+		FileOutputStream myfile = new FileOutputStream("Filetest.txt");//This file should exist in the directory for this program to work.
+		myfile.write(65);//ASCII value.
+		myfile.close();
+		System.out.println("Done");
+	}
+}
