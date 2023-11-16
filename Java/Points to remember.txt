@@ -41,18 +41,15 @@ These exceptions are subclasses of IOException. One way to deal with all of them
 
 InputStream	-> Abstract class containing methods for performing input. to write data to a destination, it may be a file, an array, peripheral devices or socket.
 OutputStream -> Abstract class containing methods for performing output, to read data from a source, it may be a file, an array, peripheral device or socket.
-FileInputStream	-> Child of InputStream that provides the capability to read from disk files.
+FileInputStream	-> Child of InputStream that provides the capability to read from disk files. For reading streams of characters FileReader class is recommended.
 FileOutputStream -> Child of OutputStream that provides the capability to write to disk files. If you have to write primitive values into a file. We can write charcter oriented as well, but for this FileWriter is recommended.
 PrintStream	-> Child of FilterOutputStream, which is a child of OutputStream; PrintStream handles output to a system’s standard (or default) output device, usually the monitor
 BufferedInputStream	-> Child of FilterInputStream, which is a child of InputStream; BufferedInputStream handles input from a system’s standard (or default) input device, usually the keyboard.
 
 
-FileInputStream is used to read bytes from a file. It can also be used to read characters from a file.
-
-
-To read characters from a file FileReader class is reccommended.
 .........................................................................................
 .........................................................................................
+
 Stream represents the pipleline through which data will flow and the funcitons to operate on data.
 
 ByteArrayInputStream is used to read byte array as a input stream.
@@ -60,6 +57,15 @@ ByteArrayOutputStream is used to write byte array in more than one file at a tim
 
 PipedWriter and PipedReader are used to read a stream of characters.
 These two classes are used in pairs.
+
+.........................................................................................
+.........................................................................................
+
+Serialization -> It is a mechanism where an object can be represented as a sequence of bytes that include's the object's data as well as information about the object's type and the types of data stored in the object.
+
+After a serialized object has been written into a file, it can be read from the file and deserialized that is, the type information and bytes that represent the object and its data can be used to recreate the object in memory.
+
+Most impressive is that the entire process is JVM independent, meaning an object can be serialized on one platform and deserialized on an entirely different platform.
 
 .........................................................................................
 .........................................................................................
@@ -89,7 +95,7 @@ Object Cloning ---> Object cloning is a way to create an exact copy of an object
                         
 .........................................................................................
 .........................................................................................
-Excepion -> A java exception is an object that describes an exceptional condition that has occurred in a piece of code. When an exceptional condition arises, an object representing that exception is created and thrown in the method that caused the error. That method may choose to handle the exception itself or pass it on. Either way, at some point, the exception is caught and processed.
+Exception -> A java exception is an object that describes an exceptional condition that has occurred in a piece of code. When an exceptional condition arises, an object representing that exception is created and thrown in the method that caused the error. That method may choose to handle the exception itself or pass it on. Either way, at some point, the exception is caught and processed.
 
 There are two ways of handling exceptions:
 1. Catch the exception and take corrective action
