@@ -12,3 +12,14 @@ The root is at the top whereas the leaves are are at the bottom.
           2    3//These are the children of the root(1).
         / | \
        4  5  6//These are the children of 2 and are called leaves as they are the last nodes in the structure.
+
+
+
+B tree -> are extended binary tree that are specialized in m-way searching. Order of this tree is defined as the maximum number of childen a node can accomodate.Therefore, the height of a b tree is relatively smaller than the height of AVL tree.
+
+Properties of a B tree:
+1. All leafs should be at the same level.
+2. Every node in a B Tree will hold a maximum of m children and (m-1) keys.
+3. Every node in a B tree, except root and leaf, can hold at least m/2 children.
+4. The root node must have no less than two children.
+5. A B tree always maintains sorted data..
