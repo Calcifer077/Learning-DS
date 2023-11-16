@@ -77,7 +77,10 @@ import java.io.IOException;//To handle exceptions.
 class Main{
 	public static void main(String[] args) throws IOException{
 		FileOutputStream myfile = new FileOutputStream("Filetest.txt");//This file should exist in the directory for this program to work.
-		myfile.write(65);//ASCII value.
+		String s = "Hello there";
+		byte b[] = s.getBytes();//Converting string into byte array.
+		myfile.write(b);//Writing string.
+		myfile.write(65);//ASCII value. Writing byte.
 		myfile.close();
 		System.out.println("Done");
 	}
