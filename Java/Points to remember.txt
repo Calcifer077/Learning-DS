@@ -13,6 +13,20 @@ It can be used in many contexts:
 3. classes ---> To prevent inheritance
 .........................................................................................
 .........................................................................................
+File Handling is used to store data in the permanent memory.
+To know about the information of the file you must include:
+" imort java.io.File; "
+
+Java File class methods:
+boolean canRead() -> Check whether we can read the data or not.
+boolean createNewFile() -> used to create a new emoty file.
+boolean canWrite() -> check whether we can write the data into the file or not.
+boolean exists() -> used to check whether the specified file is present or not.
+boolean delete() -> used to delete a file.
+String getName() -> used to find the file name.
+String getAbsolutePath()	-> used to get the absolute pathname of the file.
+
+
 FileInputStream is used to read bytes from a file. It can also be used to read characters from a file.
 
 To read characters from a file FileReader class is reccommended.
