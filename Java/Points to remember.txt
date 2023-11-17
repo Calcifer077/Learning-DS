@@ -176,3 +176,8 @@ Various type of event handling components:
 6. Java WindowListener -> Java WindowListener is a interface used for handling events related to window actions. Events like opening , closing, minimizing, etc are handled using WindowListener.
 
 * Close AWT Window -> At the end we will need to Close AWT Window, So to perform this task we will use dispose() method. This method releases the resources associated with the window and also removes it from the screen.
+
+We can put the event handling code into one of the following places:
+1. Within class
+2. Other class
+3. Anonymous class
