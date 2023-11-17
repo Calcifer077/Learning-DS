@@ -41,3 +41,45 @@ public class Main {
 		}); 
 	} 
 }
+.........................................................................................
+.........................................................................................
+.........................................................................................
+import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
+
+class WindowEent{
+    public static void main(String[] args) {
+        Frame f = new Frame("Basic program");//Creating a frame. If we don't write the below setTitle argument given in this will be written on the top of the new window that is created.
+        Label l = new Label("Employee id: ");
+
+        Button b = new Button("Submit");//Creating a button on which 'submit' is written.
+        TextField t = new TextField("Enter the employee id:");//Creating a textfield(one in which the user can write down). It will come with the given things displayed in it.
+	//Here the dimensions are as (x, y, width, height);
+        l.setBounds(20, 80, 80, 30);
+        t.setBounds(20, 150, 200, 30);
+        b.setBounds(200, 150, 80, 30);
+
+	//Adding the above components onto the frame.
+        f.add(b);
+        f.add(l);
+        f.add(t);
+
+        f.setSize(400, 300);//Setting the size
+        f.setTitle("Employee info");//This will be displayed on the top of the new window that appears.
+
+        f.setLayout(null);//Layout means the arrangement of components within the container.
+        f.setVisible(true);
+
+        f.addWindowListener(new WindowAdapter() {
+			@Override
+			public void windowClosing(WindowEvent e){
+				System.exit(0);
+			}
+		});
+
+    }
+}
+.........................................................................................
+.........................................................................................
+.........................................................................................
