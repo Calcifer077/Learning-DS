@@ -177,7 +177,36 @@ Various type of event handling components:
 
 * Close AWT Window -> At the end we will need to Close AWT Window, So to perform this task we will use dispose() method. This method releases the resources associated with the window and also removes it from the screen.
 
+There are basically two types of classes in this. One that tells what event is done like ActionEvent, WindowEvent and the other one is that tells what to do with that event. These that do something with the event are Liseteners like ActionListener, MouseListener. You have to override thier function for proper implementation.
 We can put the event handling code into one of the following places:
 1. Within class
 2. Other class
 3. Anonymous class
+
+.........................................................................................
+.........................................................................................
+
+java vs javax 
+These are both used when we import pacakges.
+java -> The java package holds the core classes or interfaces in the Java programming language. Most classes required to write basic Java programs are in the java package.
+javax -> The javax package contains classes or interface that extend the functionality of java packages. It’s also known as an extension package.
+
+java package contains the core Java Application Programming Interfaces (APIs). The javax package is an extension of the core java package. It provides additional classes built on top of the java package to add advanced features and functionalities.
+
+Java is a collection of classes that enable or make up the runtime environment, JRE. Javax is a collection of packages that were later introduced but were kept separate from Java packages.
+
+.........................................................................................
+.........................................................................................
+
+
+
+Swing -> is a part of Java Foundation classes(JFC are a set of GUI components which simplify the development of desktop applications.) that is used to create window based applications. It is built on the top of AWT (Abstract Windowing Toolkit) API and entirely written in java.
+
+Unlike AWT, Java Swing provides platform-independent and lightweight components.
+
+The javax.swing package provides classes for java swing API such as JButton, JTextField, JTextArea, JRadioButton, JCheckbox, JMenu, JColorChooser etc.
+
+.........................................................................................
+.........................................................................................
+
+Layout Manager -> The LayoutManagers are used to arrange components in a particular manner. The Java LayoutManagers facilitates us to control the positioning and size of the components in GUI forms. LayoutManager is an interface that is implemented by all the classes of layout managers.
