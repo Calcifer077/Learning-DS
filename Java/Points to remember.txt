@@ -111,3 +111,54 @@ finally -> The finally statement lets you execute code, after try...catch, regar
 throw -> The throw statement allows you to create custom error. The throw statement is used together with an exception type. There are many exception types available in Java: ArithmeticException, FileNotFoundException, ArrayIndexOutOfBoundsException, SecurityException, etc.
 
 The try...catch block can be nested.
+
+.........................................................................................
+.........................................................................................
+
+AWT(Abstract window toolkit) -> used to make GUI or window based applications in java.
+-> Components of awt are platform-dependent and heavyweight.
+-> AWT has less control as the result can differ because of components are platform dependent.
+-> AWT is platform independent not its components.
+
+Why AWT is Platform Independent?
+The Java AWT utilizes the native platform subroutine to create API components such as TextField, CheckBox, and buttons. This results in a different visual format for these components on different platforms such as Windows, MAC OS, and Unix. The reason for this is that each platform has a distinct view of its native components.
+
+AWT is platform independent even after the AWT components are platform dependent because of the points mentioned below:
+1. JVM is platform dependent.
+2. Abstract APIs
+3.  Platform-Independent Libraries
+
+Different things in AWT:
+-> Components: AWT provides various components such as buttons, labels, text fields, checkboxes, etc used for creating GUI elements for Java Applications.
+-> Containers: AWT provides containers like panels, frames, and dialogues to organize and group components in the Application.
+-> Layout Managers: Layout Managers are responsible for arranging data in the containers sone of the layout managers are BorderLayout, FlowLayout, etc.
+-> Event Handling: AWT allows the user to handle the events like mouse clicks, key presses, etc. using event listeners and adapters.
+-> Graphics and Drawing: It is the feature of AWT that helps to draw shapes, insert images and write text in the components of a Java Application.
+
+Methods of component class:
+public void add(Component c)	-> Inserts a component on this component.
+public void setSize(int width,int height)	-> Sets the size (width and height) of the component.
+public void setLayout(LayoutManager m)	-> Defines the layout manager for the component.
+public void setVisible(boolean status)	-> Changes the visibility of the component, by default false.
+
+* Container is a component that can contain other components.
+Types of Containers in Java AWT
+There are four types of containers in Java AWT:
+-> Window: Window is a top-level container that represents a graphical window or dialog box. The Window class extends the Container class, which means it can contain other components, such as buttons, labels, and text fields.
+-> Panel: Panel is a container class in Java. It is a lightweight container that can be used for grouping other components together within a window or a frame.
+-> Frame: The Frame is the container that contains the title bar and border and can have menu bars.
+-> Dialog: A dialog box is a temporary window an application creates to retrieve user input.
+
+
+-> Label --> A Label object is a component for placing text in a container. A label displays a single line of read-only text. The text can be changed by the application, but a user cannot edit it directly.
+-> Button --> AWT Button is a control component with a label that generates an event when clicked on. Button Class is used for creating a labeled button that is platform-independent.
+-> TextField --> A TextField object is a text component that allows for the editing of a single line of text.
+-> CheckBox --> It is used to turn an option on (true) or off (false). Clicking on a Checkbox changes its state from "on" to "off" or from "off" to "on".
+-> CheckboxGroup --> CheckboxGroup Class is used to group together a set of Checkbox.
+Note: CheckboxGroup enables the use of radio buttons in AWT.
+-> Choice --> The Choice class displays a popup menu to the user, from which the user can pick an item.
+
+
+To create a simple awt:
+1. By extending Frame class (inheritance)
+2. By creating the object of Frame class (association)
