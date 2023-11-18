@@ -213,3 +213,29 @@ The javax.swing package provides classes for java swing API such as JButton, JTe
 .........................................................................................
 
 Layout Manager -> The LayoutManagers are used to arrange components in a particular manner. The Java LayoutManagers facilitates us to control the positioning and size of the components in GUI forms. LayoutManager is an interface that is implemented by all the classes of layout managers.
+
+.........................................................................................
+.........................................................................................
+
+Java Applet
+Applet is a special type of program that is embedded in the webpage to generate the dynamic content. It runs inside the browser and works at client side.
+
+java.applet.Applet class
+For creating any applet java.applet.Applet class must be inherited. It provides 4 life cycle methods of applet:
+1. public void init(): is used to initialized the Applet. It is invoked only once.
+2. public void start(): is invoked after the init() method or browser is maximized. It is used to start the Applet.
+3. public void stop(): is used to stop the Applet. It is invoked when Applet is stop or browser is minimized.
+4. public void destroy(): is used to destroy the Applet. It is invoked only once.
+
+init()(intialized the applet, invoked only once) -> start()(invoked after init() or when browser is maximized. used to start the applet) -> stop()(used to stop the applet. invoked when applet stopped or browser is minimized) -> destroy()(used to destroy the applet, invoked only once)
+
+java.awt.Component class
+The Component class provides 1 life cycle method of applet.
+1. public void paint(Graphics g): is used to paint the Applet. It provides Graphics class object that can be used for drawing oval, rectangle, arc etc.
+
+Java Plug-in software is responsible to manage the life cycle of an applet?
+
+How to run an Applet?
+There are two ways to run an applet:
+1. By html file.
+2. By appletViewer tool (for testing purpose).
