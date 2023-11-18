@@ -206,6 +206,9 @@ Unlike AWT, Java Swing provides platform-independent and lightweight components.
 
 The javax.swing package provides classes for java swing API such as JButton, JTextField, JTextArea, JRadioButton, JCheckbox, JMenu, JColorChooser etc.
 
+-> JButton --> The JButton class is used to create a labeled button that has platform independent implementation. The application result in some action when the button is pushed. It inherits AbstractButton class.
+-> JLabel --> The object of JLabel class is a component for placing text in a container. It is used to display a single line of read only text. The text can be changed by an application but a user cannot edit it directly. It inherits JComponent class
+
 .........................................................................................
 .........................................................................................
 
