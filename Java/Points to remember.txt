@@ -239,3 +239,25 @@ How to run an Applet?
 There are two ways to run an applet:
 1. By html file.
 2. By appletViewer tool (for testing purpose).
+
+.........................................................................................
+.........................................................................................
+
+Threading:
+Java provides Thread class to achieve thread programming.
+
+Defining a Thread
+
+In the most general sense, you create a thread by instantiating an object of type Thread.
+Java defines two ways in which this can be accomplished:
+1. You can implement the Runnable interface.
+2. You can extend the Thread class
+
+States of thread:
+1. New
+2. Active
+3. Blocked / Waiting
+4. Timed Waiting
+5. Terminated
+
+New: Whenever a new thread is created, it is always in the new state. For a thread in the new state, the code has not been run yet and thus has not begun its execution.
