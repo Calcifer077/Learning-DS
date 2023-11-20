@@ -39,8 +39,8 @@ Several exceptions in the java.io package might occur when you are working with 
 -? An EOFException indicates that the end of a file has been reached unexpectedly as data was being read from the file through an input stream.
 These exceptions are subclasses of IOException. One way to deal with all of them is to enclose all input and output statements in a try-catch block that catches IOException objects. Call the exception’s toString() or getMessage() methods in the catch block to find out more about the problem
 
-InputStream	-> Abstract class containing methods for performing input. to write data to a destination, it may be a file, an array, peripheral devices or socket.
-OutputStream -> Abstract class containing methods for performing output, to read data from a source, it may be a file, an array, peripheral device or socket.
+InputStream	-> Abstract class containing methods for performing input. to read data from a destination, it may be a file, an array, peripheral devices or socket.
+OutputStream -> Abstract class containing methods for performing output, to write data to a source, it may be a file, an array, peripheral device or socket.
 FileInputStream	-> Child of InputStream that provides the capability to read from disk files. For reading streams of characters FileReader class is recommended.
 FileOutputStream -> Child of OutputStream that provides the capability to write to disk files. If you have to write primitive values into a file. We can write charcter oriented as well, but for this FileWriter is recommended.
 PrintStream	-> Child of FilterOutputStream, which is a child of OutputStream; PrintStream handles output to a system’s standard (or default) output device, usually the monitor
