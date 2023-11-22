@@ -14,7 +14,7 @@ int main(){
 		int j = i - 1;
 		while(arr[j] > current && j >= 0){//This loop will compare 'current' element to all the element on its left and insert
 						  //it to its right place.
-			arr[j+1] = arr[j];
+			arr[j+1] = arr[j];//shifting the element to the rght hand side.
 			j--;
 		}
 		arr[j+1] = current;
