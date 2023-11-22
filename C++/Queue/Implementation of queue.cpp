@@ -5,7 +5,7 @@ using namespace std;
 #define n 20//size of array
 class Queue{
     int *arr;// array for implementation
-    //creating to pointers
+    //creating two pointers
     int front;//this will point to the first element of the array or the queue.
     int back;//It will point to the last element of the queue.
     
