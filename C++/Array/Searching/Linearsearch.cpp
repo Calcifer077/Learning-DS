@@ -1,7 +1,7 @@
 //There are two methods of searching for a element.
-//	1. Linear Search -> In this type of search array transversal is used to throung the array in a linear way starting from index 0.
+//	1. Linear Search -> In this type of search array transversal is used to through the array in a linear way starting from index 0.
 //				It can be used for both Sorted and Unsorted array.
-//	2. Binary Search -> In this type of search array is divided in two halfs anf it is checked in which half does the element lie.
+//	2. Binary Search -> In this type of search array is divided in two halfs and it is checked in which half does the element lie.
 //				Accordingly, The searching is done.
 //				It can be only done on Sorted array.
 //To search for a particular element in an array.
