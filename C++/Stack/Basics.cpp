@@ -37,7 +37,7 @@ class stack{
         return arr[top];
   }
   bool empty(){
-      return top == -1;
+      return top == -1;//It will do a comparison here.
   }
 };
 int main(){
