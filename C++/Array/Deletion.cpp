@@ -26,7 +26,7 @@ int main(){
 	int key;
 	cin>>key;
 	size = deleteelement(arr, size, key);
-	for(int i =0; i<size + 1;i++){
+	for(int i =0; i<size;i++){
 		cout<<arr[i]<<" ";
 	}
 	return 0;
