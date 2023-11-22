@@ -124,9 +124,9 @@ class Queue{//creating a Queue that can implement queue functions.
             return;
         }
         back->next = n;//If it is not empty add value to the next of back and iterate it.
-        back = n;
+        back = n;//After this line the back pointer will point here.
     }
-    
+        
     void pop(){
         if(front == NULL){
             cout<<"Queue is empty"<<endl;
