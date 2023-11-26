@@ -23,6 +23,10 @@ It can be used in many contexts:
 2. Method ---> To prevent method overriding
 3. classes ---> To prevent inheritance
 
+If you were to change the value of a final variable, try to override a final method or try to extend a final class, you will get a compile time error.
+You can inherit a final method but cannot override it.
+A final variable that is not initialized at the time of declaration is known as blank final variable. It can be only initialized by the constructor.
+We cannot declare a constructor as final because a constructor is inherited.
 .........................................................................................
 .........................................................................................
 
@@ -100,6 +104,14 @@ To reduce the complexity and simplify the language, multiple inheritance is not 
 .........................................................................................
 .........................................................................................
 
+Polymorphism in Java is a concept by which we can perform a single action in different ways. Polymorphism is derived from 2 Greek words: poly and morphs. The word "poly" means many and "morphs" means forms.
+There are two types of polymorphism in Java: compile-time polymorphism and runtime polymorphism. We can perform polymorphism in java by method overloading and method overriding.
+
+Runtime polymorphism or Dynamic Method Dispatch is a process in which a call to an overridden method is resolved at runtime rather than compile-time.
+
+.........................................................................................
+.........................................................................................
+
 Method overloading -> If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.
   If we have to perform only one operation, having same name of the methods increases the readability of the program
 Method overloading increases the readability of the program.
@@ -126,6 +138,23 @@ Rules for Java Method Overriding ->
 
 A static method cannot be overridden.
 It is because the static method is bound with class whereas instance method is bound with an object. Static belongs to the class area, and an instance belongs to the heap area.
+
+.........................................................................................
+.........................................................................................
+
+Abstraction is a process of hiding the implementation details and showing only functionality to the user.
+There are two ways to achieve abstraction in java:
+1. Abstract class (0 to 100%)
+2. Interface (100%)
+Abstract class -> A class which is declared with the abstract keyword is known as an abstract class in Java. It can have abstract and non-abstract methods (method with the body). It needs to be extended and its method implemented. It cannot be instantiated.
+Points to Remember
+1. An abstract class must be declared with an abstract keyword.
+2. It can have abstract and non-abstract methods.
+3. It cannot be instantiated.
+4. It can have constructors and static methods also.
+5. It can have final methods which will force the subclass not to change the body of the method.
+  A method which is declared as abstract and does not have implementation is known as an abstract method.
+
 .........................................................................................
 .........................................................................................
 
