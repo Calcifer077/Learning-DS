@@ -5,6 +5,11 @@ Abstract class is a restricted class that cannot be used to create objects.
 
 Super keyword is used to refer to the parent class.
 
+Usage of Java super Keyword: 
+1. 'super' can be used to refer immediate parent class instance variable.
+2. 'super' can be used to invoke immediate parent class method.
+3. 'super()' can be used to invoke immediate parent class constructor.
+
 .........................................................................................
 .........................................................................................
 @Override function is used to indicate that the method of the child class is overriding the method of the Base class.
@@ -91,6 +96,36 @@ In the terminology of Java, a class which is inherited is called a parent or sup
 On the basis of class, there can be three types of inheritance in java: single, multilevel and hierarchical.
 Multiple inheritance is not supported in Java through class.
 To reduce the complexity and simplify the language, multiple inheritance is not supported in java. To resolve the problem of ambiguity.
+
+.........................................................................................
+.........................................................................................
+
+Method overloading -> If a class has multiple methods having same name but different in parameters, it is known as Method Overloading.
+  If we have to perform only one operation, having same name of the methods increases the readability of the program
+Method overloading increases the readability of the program.
+
+There are two ways to overload the method in java:
+1. By changing number of arguments
+2. By changing the data type
+Method Overloading is not possible by changing the return type of the method only.
+In java, method overloading is not possible by changing the return type of the method only because of ambiguity.
+
+We can overload main method in java. We can have any number of main methods in a class by method overloading. But JVM calls main() method which receives string(String[] args) array as arguments only
+
+
+Method overriding -> If subclass (child class) has the same method as declared in the parent class, it is known as method overriding in Java. In other words, If a subclass provides the specific implementation of the method that has been declared by one of its parent class, it is known as method overriding.
+
+Usage of Java Method Overriding -> 
+1. Method overriding is used to provide the specific implementation of a method which is already provided by its superclass.
+2. Method overriding is used for runtime polymorphism.
+
+Rules for Java Method Overriding -> 
+1. The method must have the same name as in the parent class
+2. The method must have the same parameter as in the parent class.
+3. There must be an IS-A relationship (inheritance).
+
+A static method cannot be overridden.
+It is because the static method is bound with class whereas instance method is bound with an object. Static belongs to the class area, and an instance belongs to the heap area.
 .........................................................................................
 .........................................................................................
 
