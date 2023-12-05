@@ -281,7 +281,26 @@ Synchronization can be achieved by two ways:
 Object Cloning ---> Object cloning is a way to create an exact copy of an object. The clone() method is used for implementation.
                         -> java.lang.Cloneable interface must be implemented.
                         -> The clone() method saves the extra proessing task for creating the exact copy of an object.If we perform it by                            using the 'new' keyword, it will take a lot of pocessing time.
-                        
+
+There are three ways to make a copy of an object:-
+1. Shallow -> In this type same object will have two refrences. If we were to change the value of the oiginal object, this will also affect the copty of the object. 
+
+2. Deep -> In this type of copy a different object is created but the instance variable of the original object will not initialized. You have to inistiate this on your own.
+
+3. Clone-> This mixes the above two. It make a new object of the original object but also makes a copy of the value of original instance variables of the object. 
+
+Let Class A{
+    int x;
+    int y;
+}
+
+A obj = new A();
+obj.x = 5;
+obj.y = 6;
+
+A obj1 = obj(); //Shallow copy
+A obj1 = new A(); //Deep copy
+A.obj1 = obj.clone; //Cloning
 .........................................................................................
 .........................................................................................
 Exception -> A java exception is an object that describes an exceptional condition that has occurred in a piece of code. When an exceptional condition arises, an object representing that exception is created and thrown in the method that caused the error. That method may choose to handle the exception itself or pass it on. Either way, at some point, the exception is caught and processed.
