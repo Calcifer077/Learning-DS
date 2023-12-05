@@ -1,3 +1,27 @@
+JVM, JRE, and JDK are platform dependent because the configuration of each OS is different from each other. However, Java is platform independent.
+
+JVM -> (Java virtual machine) is an abstract machine. It is called a virtual machine because it doesn't physically exist. It is a specification that povides a runtime enviornment in which java bytecodes can be executed.
+
+The JVM performs the following main tasks:
+1. Loads code
+2. Verifies code
+3. Executes code
+4. Provides runtime environment
+
+JRE -> JRE is an acronym for Java Runtime Environment. It is also written as Java RTE. The Java Runtime Environment is a set of software tools which are used for developing Java applications. It is used to provide the runtime environment. It is the implementation of JVM. It physically exists. It contains a set of libraries + other files that JVM uses at runtime.
+
+JDK -> JDK is an acronym for Java Development Kit. The Java Development Kit (JDK) is a software development environment which is used to develop Java applications and applets. It physically exists. It contains JRE + development tools. The JDK contains a private Java Virtual Machine (JVM) and a few other resources such as an interpreter/loader (java), a compiler (javac), an archiver (jar), a documentation generator (Javadoc), etc. to complete the development of a Java Application.
+
+How Java code runs?
+- Demo.java(Java code) --Compiler--> Demo.class(Byte code) ----> Class Loader ----> Bytecode Verifier ----> Interpreter ----> Program Running
+
+Class Loader -> Part of JVM that loads the Bytecode
+Bytecode verifier -> Checks the loaded bytecode are valid and doesnot violates any rule of security.
+Interpreter -> Reads Bytecode stream then execute the program.
+
+.........................................................................................
+.........................................................................................
+
 Abstract class is a restricted class that cannot be used to create objects.
 
 .........................................................................................
@@ -68,6 +92,10 @@ Restrictions for the static method ->
   Is used to initialize the static data member.
   It is executed before the main method at the time of classloading.
 
+Differences between Static and Non-static Nested Classes:-
+1. A static nested class may be instantiated without instantiating its outer class.
+2. Inner classes can access both static and non-static members of the outer class. A static class can access only the static members of the outer class.
+
 .........................................................................................
 .........................................................................................
 
@@ -79,6 +107,28 @@ Here is given the 6 usage of java this keyword:
 4. 'this' can be passed as an argument in the method call.
 5. 'this' can be passed as argument in the constructor call.
 6. 'this' can be used to return the current class instance from the method.
+
+.........................................................................................
+.........................................................................................
+
+Wrapper class -> It is used to convert primitve data type into object and object into primitive data types. Conversion of primitive into object is known as autoboxing and conversion of objects into primitive is known as unboxing.
+
+Use of Wrapper classes in Java:-
+1. Change the value in Method: Java supports only call by value. So, if we pass a primitive value, it will not change the original value. But, if we convert the primitive value in an object, it will change the original value.
+2. Serialization: We need to convert the objects into streams to perform the serialization. If we have a primitive value, we can convert it in objects through the wrapper classes.
+3. Synchronization: Java synchronization works with objects in Multithreading.
+4. java.util package: The java.util package provides the utility classes to deal with objects.
+5. Collection Framework: Java collection framework works with objects only. All classes of the collection framework (ArrayList, LinkedList, Vector, HashSet, LinkedHashSet, TreeSet, PriorityQueue, ArrayDeque, etc.) deal with objects only.
+
+Primitive Type	Wrapper class
+boolean	     -     Boolean
+char	       -    Character
+byte	       -     Byte
+short	       -    Short
+int	         -   Integer
+long	       -    Long
+float	       -   Float
+double	     -   Double
 
 .........................................................................................
 .........................................................................................
