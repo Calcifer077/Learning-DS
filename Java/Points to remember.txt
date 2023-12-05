@@ -133,6 +133,32 @@ double	     -   Double
 .........................................................................................
 .........................................................................................
 
+Package in Java is a mechanism to encapsulate a group of classes, sub packages and interfaces. Packages are used for:
+1. Preventing naming conflicts. For example there can be two classes with name Employee in two packages, college.staff.cse.Employee and college.staff.ee.Employee
+2. Making searching/locating and usage of classes, interfaces, enumerations and annotations easier
+3. Providing controlled access: protected and default have package level access control. A protected member is accessible by classes in the same package and its subclasses. A default member (without any access specifier) is accessible by classes in the same package only.
+4. Packages can be considered as data encapsulation (or data-hiding).
+
+Subpackages: Packages that are inside another package are the subpackages. These are not imported by default, they have to imported explicitly. Also, members of a subpackage have no access privileges, i.e., they are considered as different package for protected and default access specifiers.
+
+There are two types of packages:
+1. Inbuilt 2. User defined
+
+User-defined packages
+These are the packages that are defined by the user. First we create a directory myPackage (name should be same as the name of the package). Then create the MyClass inside the directory with the first statement being the package names.
+
+package myPackage;
+public class MyClass{
+  public void getNames(String s){
+    System.out.println(s);
+  }
+}
+
+Now you can import this package in any other class by 'import myPackage.MyClass;'.
+
+.........................................................................................
+.........................................................................................
+
 Inheritance -> Inheritance in Java is a mechanism in which one object acquires all the properties and behaviors of a parent object.
 Inheritance represents the IS-A relationship which is also known as a parent-child relationship.
 Why use inheritance in java?
@@ -305,9 +331,41 @@ A.obj1 = obj.clone; //Cloning
 .........................................................................................
 Exception -> A java exception is an object that describes an exceptional condition that has occurred in a piece of code. When an exceptional condition arises, an object representing that exception is created and thrown in the method that caused the error. That method may choose to handle the exception itself or pass it on. Either way, at some point, the exception is caught and processed.
 
+Types of Exception :- 
+Java’s exceptions can be categorized into two types:
+-> Checked exceptions
+-> Unchecked exceptions
+1. Checked exceptions −
+-> A checked exception is an exception that occurs at the compile time.
+-> These are also called as compile time exceptions.
+->These exceptions cannot simply be ignored at the time of compilation, the  programmer should take care of (handle) these exceptions.
+-> checked exceptions are subject to the catch or specify a requirement, which  means they require catching or declaration. This requirement is optional for  unchecked exceptions.
+-> Code that uses a checked exception will not compile if the catch or specify rule is not followed.
+-> All Java exceptions are checked exceptions except those of the Error and  RuntimeException classes and their subclasses.
+
+2. Unchecked exceptions − An unchecked exception is an exception that occurs at the time of execution.
+-> These are also called as Runtime Exceptions.
+-> These include programming bugs, such as logic errors or improper use of an API.  Runtime exceptions are ignored at the time of compilation.
+-> For example, if you have declared an array of size 5 in your program, and trying  to call the 6th element of the array then an  ArrayIndexOutOfBoundsExceptionexception occurs.
+
+3. Errors − These are not exceptions at all, but problems that arise beyond the control  of the user or the programmer.
+-> Errors are typically ignored in your code because you can rarely do anything  about an error.
+-> For example, if a stack overflow occurs, an error will arise. They are also ignored  at the time of compilation.
+
 There are two ways of handling exceptions:
 1. Catch the exception and take corrective action
 2. Throw the exception to the calling method which will force the calling method to handle it.  
+
+Default Exception Handling : Whenever inside a method, if an exception has  occurred, the method creates an Object known as Exception Object and hands it off  to the run-time system(JVM).
+-> The exception object contains name and description of the exception, and current  state of the program where exception has occurred.
+-> Creating the Exception Object and handling it to the run-time system is calledthrowing an Exception.
+-> There might be the list of the methods that had been called to get to the method  where exception was occurred. This ordered list of the methods is called Call  Stack.
+-> Now the following procedure will happen:-
+--> The run-time system searches the call stack to find the method that contains  block of code that can handle the occurred exception. The block of the code is  called Exception handler.
+--> The run-time system starts searching from the method in which exception  occurred, proceeds through call stack in the reverse order in which methods  were called.
+---> If it finds appropriate handler then it passes the occurred exception to it.  Appropriate handler means the type of the exception object thrown matches  the type of the exception object it can handle.
+---> If run-time system searches all the methods on call stack and couldn’t have  found the appropriate handler then run-time system handover the Exception  Object to default exception handler , which is part of run-time system. This  handler prints the exception information in the following format and terminates  program abnormally.
+
 
 Java exception handling is done using try...catch block. The try...catch block are used in pair.
 
@@ -334,7 +392,7 @@ The Java AWT utilizes the native platform subroutine to create API components su
 AWT is platform independent even after the AWT components are platform dependent because of the points mentioned below:
 1. JVM is platform dependent.
 2. Abstract APIs
-3.  Platform-Independent Libraries
+3. Platform-Independent Libraries
 
 Different things in AWT:
 -> Components: AWT provides various components such as buttons, labels, text fields, checkboxes, etc used for creating GUI elements for Java Applications.
