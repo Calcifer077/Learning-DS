@@ -261,8 +261,7 @@ FileOutputStream -> Child of OutputStream that provides the capability to write 
 PrintStream	-> Child of FilterOutputStream, which is a child of OutputStream; PrintStream handles output to a system’s standard (or default) output device, usually the monitor
 BufferedInputStream	-> Child of FilterInputStream, which is a child of InputStream; BufferedInputStream handles input from a system’s standard (or default) input device, usually the keyboard.
 
-ava ByteArrayOutputStream class methods
-Method	Description
+Java ByteArrayOutputStream class methods:-
 - int size() -> It is used to returns the current size of a buffer.
 - byte[] toByteArray() -> It is used to create a newly allocated byte array.
 - String toString()	-> It is used for converting the content into a string decoding bytes using a platform default character set.
@@ -273,8 +272,7 @@ Method	Description
 - void reset() -> It is used to reset the count field of a byte array output stream to zero value.
 - void close() -> It is used to close the ByteArrayOutputStream.
 
-Java ByteArrayInputStream class methods
-Methods	Description
+Java ByteArrayInputStream class methods:-
 - int available()	-> It is used to return the number of remaining bytes that can be read from the input stream.
 - int read() -> It is used to read the next byte of data from the input stream.
 - int read(byte[] ary, int off, int len) -> It is used to read up to len bytes of data from an array of bytes in the input stream.
@@ -283,6 +281,34 @@ Methods	Description
 - void mark(int readAheadLimit) -> It is used to set the current marked position in the stream.
 - void reset() -> It is used to reset the buffer of a byte array.
 - void close() -> It is used for closing a ByteArrayInputStream.
+
+Java FileWriter ->
+Java FileWriter class is used to write character-oriented data to a file. It is character-oriented class which is used for file handling in java.Unlike FileOutputStream class, you don't need to convert string into byte array because it provides method to write string directly.
+Constructors of FileWriter class:-
+- FileWriter(String file)	-> Creates a new file. It gets file name in string.
+- FileWriter(File file)	-> Creates a new file. It gets file name in File object.
+
+Methods of FileWriter class:-
+- void write(String text) -> It is used to write the string into FileWriter.
+- void write(char c) -> It is used to write the char into FileWriter.
+- void write(char[] c) -> It is used to write char array into FileWriter.
+- void flush() -> It is used to flushes the data of FileWriter.
+- void close()	-> It is used to close the FileWriter.
+
+Java FilterReader -> Java FilterReader is used to perform filtering operation on reader stream. It is an abstract class for reading filtered character streams.
+
+Constructor:-
+- FilterReader(Reader in) -> It creates a new filtered reader.
+
+Methods:-
+- void	close()	-> It closes the stream and releases any system resources associated with it.
+- void	mark(int readAheadLimit) -> It marks the present position in the stream.
+- boolean	markSupported() -> It tells whether this stream supports the mark() operation.
+- boolean	ready() -> It tells whether this stream is ready to be read.
+- int	read() -> It reads a single character.
+- int	read(char[] cbuf, int off, int len) -> It reads characters into a portion of an array.
+- void	reset()	-> It resets the stream.
+- long	skip(long n) -> It skips characters.
 
 .........................................................................................
 .........................................................................................
