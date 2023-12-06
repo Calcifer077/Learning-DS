@@ -251,7 +251,7 @@ String getAbsolutePath()	-> used to get the absolute pathname of the file.
 Several exceptions in the java.io package might occur when you are working with files and streams.
 
 -> A FileNotFound exception occurs when you try to create a stream or file object using a file that couldn’t be located.
--? An EOFException indicates that the end of a file has been reached unexpectedly as data was being read from the file through an input stream.
+-> An EOFException indicates that the end of a file has been reached unexpectedly as data was being read from the file through an input stream.
 These exceptions are subclasses of IOException. One way to deal with all of them is to enclose all input and output statements in a try-catch block that catches IOException objects. Call the exception’s toString() or getMessage() methods in the catch block to find out more about the problem
 
 InputStream	-> Abstract class containing methods for performing input. to read data from a destination, it may be a file, an array, peripheral devices or socket.
@@ -261,6 +261,28 @@ FileOutputStream -> Child of OutputStream that provides the capability to write 
 PrintStream	-> Child of FilterOutputStream, which is a child of OutputStream; PrintStream handles output to a system’s standard (or default) output device, usually the monitor
 BufferedInputStream	-> Child of FilterInputStream, which is a child of InputStream; BufferedInputStream handles input from a system’s standard (or default) input device, usually the keyboard.
 
+ava ByteArrayOutputStream class methods
+Method	Description
+- int size() -> It is used to returns the current size of a buffer.
+- byte[] toByteArray() -> It is used to create a newly allocated byte array.
+- String toString()	-> It is used for converting the content into a string decoding bytes using a platform default character set.
+- String toString(String charsetName)	-> It is used for converting the content into a string decoding bytes using a specified charsetName.
+- void write(int b)	-> It is used for writing the byte specified to the byte array output stream.
+- void write(byte[] b, int off, int len) -> It is used for writing len bytes from specified byte array starting from the offset off to the byte array output stream.
+- void writeTo(OutputStream out) -> It is used for writing the complete content of a byte array output stream to the specified output stream.
+- void reset() -> It is used to reset the count field of a byte array output stream to zero value.
+- void close() -> It is used to close the ByteArrayOutputStream.
+
+Java ByteArrayInputStream class methods
+Methods	Description
+- int available()	-> It is used to return the number of remaining bytes that can be read from the input stream.
+- int read() -> It is used to read the next byte of data from the input stream.
+- int read(byte[] ary, int off, int len) -> It is used to read up to len bytes of data from an array of bytes in the input stream.
+- boolean markSupported() -> It is used to test the input stream for mark and reset method.
+- long skip(long x) -> It is used to skip the x bytes of input from the input stream.
+- void mark(int readAheadLimit) -> It is used to set the current marked position in the stream.
+- void reset() -> It is used to reset the buffer of a byte array.
+- void close() -> It is used for closing a ByteArrayInputStream.
 
 .........................................................................................
 .........................................................................................
@@ -272,6 +294,7 @@ ByteArrayOutputStream is used to write byte array in more than one file at a tim
 
 PipedWriter and PipedReader are used to read a stream of characters.
 These two classes are used in pairs.
+Here pipe means the link between two threads running.
 
 .........................................................................................
 .........................................................................................
