@@ -485,8 +485,12 @@ Layout Manager -> The LayoutManagers are used to arrange components in a particu
 
 Java Applet
 Applet is a special type of program that is embedded in the webpage to generate the dynamic content. It runs inside the browser and works at client side.
+Important points :-
+1. All applets are sub-classes (either directly or indirectly) of java.applet.Applet class.
+2. Applets are not stand-alone programs. Instead, they run within either a web browser or an applet viewer. JDK provides a standard applet viewer tool called applet viewer.
+3. In general, execution of an applet does not begin at main() method.
+4. Output of an applet window is not performed by System.out.println(). Rather it is handled with various AWT methods, such as drawString().
 
-java.applet.Applet class
 For creating any applet java.applet.Applet class must be inherited. It provides 4 life cycle methods of applet:
 1. public void init(): is used to initialized the Applet. It is invoked only once.
 2. public void start(): is invoked after the init() method or browser is maximized. It is used to start the Applet.
@@ -527,3 +531,71 @@ States of thread:
 5. Terminated
 
 New: Whenever a new thread is created, it is always in the new state. For a thread in the new state, the code has not been run yet and thus has not begun its execution.
+
+.........................................................................................
+.........................................................................................
+
+JDBC -> Java Database connectivity
+
+API(Application programming interface) is a document that contains description of all the features of a product or software. It represents classes and interfaces that software programs can follow to communicate with each other. An API can be created for applications, libraries, operating systems, etc.
+
+Java JDBC is a java API to connect and execute query with the database. JDBC API uses jdbc drivers to connect with the database. This API consists of a set of classes and interfaces to enable programmers to write pure Java Database applications.
+Before JDBC, ODBC(Open database connectivity) API was the database API to connect and execute query with the database. But, ODBC API uses ODBC driver which is written in C language (i.e. platform dependent and unsecured). That is why Java has defined its own API (JDBC API) that uses JDBC drivers (written in Java language)
+JDBC is an mediator that communicate between java app and database.
+Types of JDBC drivers:
+1. JDBC-ODBC bridge driver
+2. Native-API driver(partially java driver)
+3. Network protocol driver(fully java driver)
+4. Thin driver(fully java driver)
+
+1) JDBC-ODBC bridge driver
+The JDBC-ODBC bridge driver uses ODBC driver to connect to the database. The JDBC-ODBC bridge driver converts JDBC method calls into the ODBC function calls. This is now discouraged because of thin driver.
+Advantages:
+1. easy to use.
+2. can be easily connected to any database.
+Disadvantages:
+1. Performance degraded because JDBC method call is converted into the ODBC function calls.
+2. The ODBC driver needs to be installed on the client machine.
+
+2) Native-API driver
+The Native API driver uses the client-side libraries of the database. The driver converts JDBC method calls into native calls of the database API. It is not written entirely in java.
+Advantage:
+1. performance upgraded than JDBC-ODBC bridge driver.
+Disadvantage:
+1. The Native driver needs to be installed on the each client machine.
+2. The Vendor client library needs to be installed on client machine.
+
+3) Network Protocol driver
+The Network Protocol driver uses middleware (application server) that converts JDBC calls directly or indirectly into the vendor-specific database protocol. It is fully written in java.
+Advantage:
+1. No client side library is required because of application server that can perform many tasks like auditing, load balancing, logging etc.
+Disadvantages:
+1. Network support is required on client machine.
+2. Requires database-specific coding to be done in the middle tier.
+3. Maintenance of Network Protocol driver becomes costly because it requires database-specific coding to be done in the middle tier.
+
+4) Thin driver
+The thin driver converts JDBC calls directly into the vendor-specific database protocol. That is why it is known as thin driver. It is fully written in Java language.
+Advantage:
+1. Better performance than all other drivers.
+2. No software is required at client side or server side.
+Disadvantage:
+1. Drivers depend on the Database
+
+Query -> is a request for data.
+Java statement interface provies methods to execute queries with the database.
+Methods:-
+1. executeQuery(String sql) -> It returns a result set.
+2. executeUpdate(String sql) -> It is used to update(insert, delete) data. It is return type of 'int'. It returns integer about how much number of rows are affected.
+3. execute(String sql) -> It is of boolean return type. When we execute multiple queuries, this is used.
+4. executeBatch() -> It is used to execute more than one query together.
+
+import java.sql.*;
+class sql{
+  psvm(String args[]) throws exception{
+    Class.forName("oracle.jdbc.driver.OracleDriver");
+  }
+}
+
+.........................................................................................
+.........................................................................................
