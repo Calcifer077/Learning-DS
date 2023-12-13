@@ -37,17 +37,17 @@ public class Linkedlist {
         System.out.println("Null");
     }
 
-    public static Linkedlist deletebykey(Linkedlist list, int key){
-        Node new_node = list.head;
-        if(list.head.data == key){
-            list.head = new_node.next;
+    public static Linkedlist deletebykey(Linkedlist list, int key){//Delete a node that hve a certain key. 
+        Node new_node = list.head;//Creating a new node that will point to the liar head. 
+        if(list.head.data == key){//If the node to be deleted is head
+            list.head = new_node.next;//Move the head pointer to the next node. 
             System.out.println(key + "found and deleted");
         }
         else{
             Node temp = list.head;
             Node prev = list.head;
-            while(temp.data != key && temp.next!= null){
-                prev = temp;
+            while(temp.data != key && temp.next!= null){//Do it until temp's data is equal to given key or we have exhausted the list. 
+                prev = temp;//Doing these two steps to make sure that we have the previous node. If we want  to delete a node we have to know about the previous so we can connect that node to next to next node. 
                 temp = temp.next;
             }
             if(temp != null){
