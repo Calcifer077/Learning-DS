@@ -1,4 +1,4 @@
-public class Main
+public class diamond
 {
   //    *
   //   ***
@@ -9,7 +9,7 @@ public class Main
   //   ***
   //    *
 
-    public static void diamond(int n){
+    public static void printDiamond(int n){
         for(int i = 1; i <= n; i++){
             for(int j = 1; j <= n - i; j++){
                 System.out.print(" ");
@@ -30,6 +30,6 @@ public class Main
         }
     }
 	public static void main(String[] args) {
-		diamond(4);
+		printDiamond(4);
 	}
 }

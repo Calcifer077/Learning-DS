@@ -1,7 +1,7 @@
 //Checking if the number is palindrome.
 import java.util.Scanner;
 
-class Helloworld{
+class palindrome{
     public static void main(String args[]){
         Scanner in = new Scanner(System.in);
         System.out.println("Enter the number for you which want to check: ");

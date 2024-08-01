@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Helloworld{
+class basics{
     public static void main(String args[]){
         Scanner in = new Scanner(System.in);
         System.out.println("Adding two numbers without taking input from user. \n");

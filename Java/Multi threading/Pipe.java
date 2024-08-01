@@ -5,7 +5,7 @@
 import java.io.PipedReader;//Importing this to read from a pipe
 import java.io.PipedWriter;//Importing this to write in a pipe
   
-public class First {  
+public class Pipe {  
     public static void main(String[] args) {  
         try {  
             //Here 'read' and 'write' are not inbuilt function, we cna name this function anyhting we want.

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Main{
+public class Deletion{
     static int deletelement(int arr[], int n, int key){
         int i;
         for(i = 0; i < n; i++){

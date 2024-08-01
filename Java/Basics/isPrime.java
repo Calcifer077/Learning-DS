@@ -1,4 +1,4 @@
-public class Main
+public class isPrime
 {   
     // public static boolean isPrime(int n){
     //     if(n == 2){
@@ -13,7 +13,7 @@ public class Main
     // }
 
     // Below approach is more optimized than the above one.
-    public static boolean isPrime(int n){
+    public static boolean checkIfPrime(int n){
         if(n == 2){
             return true;
         }
@@ -27,6 +27,6 @@ public class Main
     
     
 	public static void main(String[] args) {
-		System.out.println(isPrime(50));
+		System.out.println(checkIfPrime(50));
 	}
 }
