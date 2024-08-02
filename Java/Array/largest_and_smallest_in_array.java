@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class largest_and_smallest_in_array {
 	public static void largestAndSmallest(int arr[]){
       // Both below values comes from the 'util' package.
 	    int largest = Integer.MIN_VALUE; // - Infinity
