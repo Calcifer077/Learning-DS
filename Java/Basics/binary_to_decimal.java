@@ -1,4 +1,4 @@
-public class Main{
+public class binary_to_decimal{
     public static double binaryToDecimal(int n){
         double result = 0;
         int i = 0;

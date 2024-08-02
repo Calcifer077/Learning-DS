@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main{
+public class convert_to_uppercase{
     
     public static String convertToUppercase(String str){
         StringBuilder sb = new StringBuilder("");

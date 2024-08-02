@@ -1,4 +1,4 @@
-public class Main{
+public class clear_last_ith_bit{
     public static int clearLastIthBit(int num, int i){
         int bitmask = (~0)<<i;
         return num & bitmask;

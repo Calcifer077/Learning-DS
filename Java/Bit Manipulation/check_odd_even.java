@@ -1,4 +1,4 @@
-public class Main
+public class check_odd_even
 {
     // public static void checkEvenOdd(int num){
     //     num = num & 1;

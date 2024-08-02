@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Helloworld{
+class if_else{
     public static void main(String args[]){
         Scanner in = new Scanner(System.in);
         System.out.println("Enter your age: ");

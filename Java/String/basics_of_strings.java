@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main{
+public class basics_of_strings{
     public static void main (String[] args) {
         // char arr[] = {'a', 'b', 'c', 'd'};
         // String str = "abcd";

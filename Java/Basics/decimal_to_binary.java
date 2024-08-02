@@ -1,4 +1,4 @@
-public class Main{
+public class decimal_to_binary{
     public static double decimalToBinary(int n){
         double result = 0;
         int pow = 0;

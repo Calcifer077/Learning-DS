@@ -1,4 +1,4 @@
-public class Main{
+public class substring_function{
     
     public static String substring(String str, int s, int e){
         String substr = "";

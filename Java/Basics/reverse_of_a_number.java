@@ -1,5 +1,4 @@
-public class Main
-{
+public class reverse_of_a_number{
   public static void main (String[]args)
   {
     // Reversing a Number

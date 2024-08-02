@@ -1,4 +1,4 @@
-public class Main{
+public class find_shortest_path{
     
     public static int findShortestPath(String str){
         int x = 0;

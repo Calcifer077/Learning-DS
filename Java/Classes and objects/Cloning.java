@@ -1,8 +1,8 @@
-class Main implements Cloneable{
+class Cloning implements Cloneable{
     int rollno;
     String name;
 
-    Main(int rollno, String name){
+    Cloning(int rollno, String name){
         this.rollno = rollno;
         this.name = name;
     }
@@ -12,9 +12,9 @@ class Main implements Cloneable{
     }
     public static void main(String[] args) {
         try{
-            Main s1 = new Main(123, "Student 1");
+            Cloning s1 = new Cloning(123, "Student 1");
 
-            Main s2 = (Main)s1.clone();
+            Cloning s2 = (Cloning)s1.clone();
 
             System.out.println(s1.rollno + " " + s1.name);
             System.out.println(s2.rollno + " " + s2.name);

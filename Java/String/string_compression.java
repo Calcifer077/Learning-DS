@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main{
+public class string_compression{
     
     public static String stringCompression(String str){
         StringBuilder sb = new StringBuilder("");

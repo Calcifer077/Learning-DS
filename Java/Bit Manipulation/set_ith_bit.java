@@ -1,4 +1,4 @@
-public class Main
+public class set_ith_bit
 {
     public static int setIthBit(int num, int i){
         // In this we have to set(convert to 1) ith bit.
