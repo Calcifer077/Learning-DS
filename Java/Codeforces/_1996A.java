@@ -1,6 +1,8 @@
+// legs
+
 import java.util.*;
 
-public class legs {
+public class _1996A {
     public static int countLegs(int legs) {
         int res = 0;
         while (legs > 0) {
