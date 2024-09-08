@@ -1,3 +1,5 @@
+// Different string
+
 import java.util.*;
 
 public class _1971B {
