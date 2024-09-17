@@ -1,3 +1,5 @@
+
+// Strange splitting
 import java.util.*;
 
 public class _1984A {
