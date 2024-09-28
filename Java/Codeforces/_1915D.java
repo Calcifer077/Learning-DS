@@ -1,27 +1,42 @@
-import java.util.*;
+import java.util.Scanner;
 
 public class _1915D {
-    public static String solve(String str) {
-        String res = "";
+    public static void solve(String str) {
+        StringBuilder res = new StringBuilder();
+        int i = str.length() - 1;
 
-        for (int i = 0; i < str.length() - 1; i++) {
-            if (str.charAt(i) == 'a' || str.charAt(i) == 'e') {
+        while (i >= 0) {
+            int x;
+            char lastChar = str.charAt(i);
+
+            if (lastChar == 'a' || lastChar == 'e') {
+                x = 2;
+            } else {
+                x = 3;
             }
 
+            while (x > 0 && i >= 0) {
+                res.append(str.charAt(i));
+                i--;
+                x--;
+            }
+            res.append(".");
         }
 
-        return res;
+        res.setLength(res.length() - 1);
+        res.reverse();
+        System.out.println(res);
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int t = sc.nextInt();
-        while (t > 0) {
+        sc.nextLine();
+        while (t-- > 0) {
             int n = sc.nextInt();
-            String str = sc.next();
-
-            System.out.println(solve(str));
-            t--;
+            sc.nextLine();
+            String str = sc.nextLine();
+            solve(str);
         }
         sc.close();
     }
