@@ -1,0 +1,16 @@
+public void addInTheEnd(int data) {
+        // 1. Create a new node with the data provided in the argument
+        Node newNode = new Node(data);
+        size++;
+        // Check if 'head' is equal to null, meaning linked list is empty
+        if (head == null) {
+            head = tail = newNode;
+            return;
+        }
+
+        // 2. Reference 'tail''s next to 'newNode'
+        tail.next = newNode;
+
+        // 3. Change the value of 'tail' variable to 'newNode'
+        tail = newNode;
+    }

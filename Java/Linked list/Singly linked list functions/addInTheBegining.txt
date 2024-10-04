@@ -1,0 +1,18 @@
+public void addInTheBegining(int data) {
+    // 1. Create a new node with the data that was passed in the argument
+    Node newNode = new Node(data);
+    size++;
+
+    // Check if 'head' is null, meaning that there are no nodes present in the
+    // linked list.
+    if (head == null) {
+        head = tail = newNode;
+        return;
+    }
+
+    // 2. Reference the 'next' of this node to 'head'.
+    newNode.next = head;
+
+    // 3. Assign 'head' variable to 'newNode'
+    head = newNode;
+}

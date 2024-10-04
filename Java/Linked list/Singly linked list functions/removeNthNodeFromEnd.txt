@@ -1,0 +1,16 @@
+public void removeNthNodeFromEnd(int n) {
+    if (n == size) {
+        head = head.next;
+        return;
+    }
+    Node front = head;
+
+    n = size - n;
+    int i = 1;
+    while (i < n) {
+        front = front.next;
+        i++;
+    }
+
+    front.next = front.next.next;
+}

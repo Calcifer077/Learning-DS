@@ -1,0 +1,11 @@
+public int searchRecursive(Node temp, int key, int i) {
+    if (temp == null) {
+        return -1;
+    }
+
+    if (temp.data == key) {
+        return i;
+    }
+
+    return searchRecursive(temp.next, key, i + 1);
+}

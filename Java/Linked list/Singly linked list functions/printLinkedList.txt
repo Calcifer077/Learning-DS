@@ -1,0 +1,14 @@
+public void printLinkedList() {
+        if (head == null) {
+            System.out.println("Linked list is empty");
+            return;
+        }
+
+        Node temp = head;
+
+        while (temp != null) {
+            System.out.print(temp.data + "->");
+            temp = temp.next;
+        }
+        System.out.println("NULL");
+    }

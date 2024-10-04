@@ -1,0 +1,11 @@
+public int searchRecursiveWithoutIdx(Node temp, int key) {
+    if (temp == null) {
+        return -1;
+    }
+
+    if (temp.data == key) {
+        return 0;
+    }
+
+    return searchRecursiveWithoutIdx(temp.next, key) + 1;
+}

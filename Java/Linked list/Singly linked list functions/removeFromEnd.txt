@@ -1,0 +1,30 @@
+public int removeFromEnd() {
+        // If the linked list is empty
+        if (head == null) {
+            System.out.println("Linked list is empty");
+            return -1;
+            // If there is only one element in the linked list
+        } else if (head.next == null) {
+            int val = head.data;
+            head = tail = null;
+            size--;
+            return val;
+        }
+
+        // Go to last second node and change its next pointer to null
+        // Change tail to point to this node
+        Node prev = head;
+        // prev : size - 2
+        for (int i = 0; i < size - 2; i++) {
+            prev = prev.next;
+        }
+        // while (prev.next.next != null) {
+        // prev = prev.next;
+        // }
+
+        int val = tail.data;
+        prev.next = null;
+        tail = prev;
+        size--;
+        return val;
+    }
