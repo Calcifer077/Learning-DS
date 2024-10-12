@@ -33,5 +33,6 @@ public class _2005B1 {
             long d = sc.nextLong();
             solve(arr, d, n);
         }
+        sc.close();
     }
 }
