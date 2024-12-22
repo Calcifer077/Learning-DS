@@ -1,0 +1,819 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "about_interface",
+            "request": "launch",
+            "mainClass": "Abstraction.about_interface",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "Cloning",
+            "request": "launch",
+            "mainClass": "Cloning",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "Deletion",
+            "request": "launch",
+            "mainClass": "Deletion",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "Graph",
+            "request": "launch",
+            "mainClass": "Graph",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "basics_of_inheritance",
+            "request": "launch",
+            "mainClass": "Inheritance.basics_of_inheritance",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "multiple_inheritance",
+            "request": "launch",
+            "mainClass": "Inheritance.multiple_inheritance",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "circular_queue_using_array",
+            "request": "launch",
+            "mainClass": "Java.Queues.circular_queue_using_array",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "queue_using_JCF",
+            "request": "launch",
+            "mainClass": "Java.Queues.queue_using_JCF",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "queue_using_arrays",
+            "request": "launch",
+            "mainClass": "Java.Queues.queue_using_arrays",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "queue_using_linked_list",
+            "request": "launch",
+            "mainClass": "Java.Queues.queue_using_linked_list",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "queue_using_two_stacks",
+            "request": "launch",
+            "mainClass": "Java.Queues.queue_using_two_stacks",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "Matrix",
+            "request": "launch",
+            "mainClass": "Matrix",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "diamond",
+            "request": "launch",
+            "mainClass": "Patterns.diamond",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "Pipe",
+            "request": "launch",
+            "mainClass": "Pipe",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "method_overloading",
+            "request": "launch",
+            "mainClass": "Polymorphism.method_overloading",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "method_overriding",
+            "request": "launch",
+            "mainClass": "Polymorphism.method_overriding",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "search_in_a_rotated_array",
+            "request": "launch",
+            "mainClass": "Searching.search_in_a_rotated_array",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "_1915F",
+            "request": "launch",
+            "mainClass": "_1915F",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "_2037D",
+            "request": "launch",
+            "mainClass": "_2037D",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "_2039B",
+            "request": "launch",
+            "mainClass": "_2039B",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "_287B",
+            "request": "launch",
+            "mainClass": "_287B",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "_stacks",
+            "request": "launch",
+            "mainClass": "_stacks",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "arrays_are_passed_by_reference",
+            "request": "launch",
+            "mainClass": "arrays_are_passed_by_reference",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "avl_tree",
+            "request": "launch",
+            "mainClass": "avl_tree",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "backtracking_on_arrays",
+            "request": "launch",
+            "mainClass": "backtracking_on_arrays",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "basics",
+            "request": "launch",
+            "mainClass": "basics",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "basics_of_arraylist",
+            "request": "launch",
+            "mainClass": "basics_of_arraylist",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "basics_of_hashmap",
+            "request": "launch",
+            "mainClass": "basics_of_hashmap",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "basics_of_strings",
+            "request": "launch",
+            "mainClass": "basics_of_strings",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "bfs",
+            "request": "launch",
+            "mainClass": "bfs",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "binary_search_tree",
+            "request": "launch",
+            "mainClass": "binary_search_tree",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "binary_to_decimal",
+            "request": "launch",
+            "mainClass": "binary_to_decimal",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "buy_and_sell_stocks",
+            "request": "launch",
+            "mainClass": "buy_and_sell_stocks",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "check_if_a_array_is_sorted",
+            "request": "launch",
+            "mainClass": "check_if_a_array_is_sorted",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "check_if_a_number_appears_atleast_twice",
+            "request": "launch",
+            "mainClass": "check_if_a_number_appears_atleast_twice",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "check_if_all_a_before_b",
+            "request": "launch",
+            "mainClass": "check_if_all_a_before_b",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "check_if_number_power_of_two",
+            "request": "launch",
+            "mainClass": "check_if_number_power_of_two",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "check_odd_even",
+            "request": "launch",
+            "mainClass": "check_odd_even",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "check_palindrome",
+            "request": "launch",
+            "mainClass": "check_palindrome",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "clear_last_ith_bit",
+            "request": "launch",
+            "mainClass": "clear_last_ith_bit",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "clear_range_of_bits",
+            "request": "launch",
+            "mainClass": "clear_range_of_bits",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "container_with_most_water",
+            "request": "launch",
+            "mainClass": "container_with_most_water",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "convert_to_uppercase",
+            "request": "launch",
+            "mainClass": "convert_to_uppercase",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "cost_of_groceries",
+            "request": "launch",
+            "mainClass": "cost_of_groceries",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "count_set_bits_in_a_number",
+            "request": "launch",
+            "mainClass": "count_set_bits_in_a_number",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "counting_frequency_using_hashmap",
+            "request": "launch",
+            "mainClass": "counting_frequency_using_hashmap",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "decimal_to_binary",
+            "request": "launch",
+            "mainClass": "decimal_to_binary",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "difficulty_rating_order",
+            "request": "launch",
+            "mainClass": "difficulty_rating_order",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "doubleLL",
+            "request": "launch",
+            "mainClass": "doubleLL",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "duplicate_parantheses",
+            "request": "launch",
+            "mainClass": "duplicate_parantheses",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "factorial",
+            "request": "launch",
+            "mainClass": "factorial",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "fast_exponention",
+            "request": "launch",
+            "mainClass": "fast_exponention",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "find_maximum_in_a_array",
+            "request": "launch",
+            "mainClass": "find_maximum_in_a_array",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "find_permutations",
+            "request": "launch",
+            "mainClass": "find_permutations",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "find_shortest_path",
+            "request": "launch",
+            "mainClass": "find_shortest_path",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "find_subsets",
+            "request": "launch",
+            "mainClass": "find_subsets",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "first_occurence_of_an_element_in_an_array",
+            "request": "launch",
+            "mainClass": "first_occurence_of_an_element_in_an_array",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "frequency_counter",
+            "request": "launch",
+            "mainClass": "frequency_counter",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "friends_pairing_problem",
+            "request": "launch",
+            "mainClass": "friends_pairing_problem",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "get_ith_bit",
+            "request": "launch",
+            "mainClass": "get_ith_bit",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "getters_and_setters",
+            "request": "launch",
+            "mainClass": "getters_and_setters",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "gridWays",
+            "request": "launch",
+            "mainClass": "gridWays",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "if_else",
+            "request": "launch",
+            "mainClass": "if_else",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "isPrime",
+            "request": "launch",
+            "mainClass": "isPrime",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "iteration_on_hashmap",
+            "request": "launch",
+            "mainClass": "iteration_on_hashmap",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "largest_and_second_largest",
+            "request": "launch",
+            "mainClass": "largest_and_second_largest",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "largest_and_smallest_in_array",
+            "request": "launch",
+            "mainClass": "largest_and_smallest_in_array",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "last_occurence_of_an_element_in_an_array",
+            "request": "launch",
+            "mainClass": "last_occurence_of_an_element_in_an_array",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "linked_list",
+            "request": "launch",
+            "mainClass": "linked_list",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "linkedlist",
+            "request": "launch",
+            "mainClass": "linkedlist",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "linkedlistusingJCF",
+            "request": "launch",
+            "mainClass": "linkedlistusingJCF",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "max_area_histogram",
+            "request": "launch",
+            "mainClass": "max_area_histogram",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "maximum_in_arraylist",
+            "request": "launch",
+            "mainClass": "maximum_in_arraylist",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "merge_sort",
+            "request": "launch",
+            "mainClass": "merge_sort",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "min_to_max",
+            "request": "launch",
+            "mainClass": "min_to_max",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "multidimensional_arraylist",
+            "request": "launch",
+            "mainClass": "multidimensional_arraylist",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "nQueens",
+            "request": "launch",
+            "mainClass": "nQueens",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "next_greater_element",
+            "request": "launch",
+            "mainClass": "next_greater_element",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "oneknapsack",
+            "request": "launch",
+            "mainClass": "oneknapsack",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "operations_of_stack",
+            "request": "launch",
+            "mainClass": "operations_of_stack",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "pair_sum",
+            "request": "launch",
+            "mainClass": "pair_sum",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "pairs",
+            "request": "launch",
+            "mainClass": "pairs",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "palindrome",
+            "request": "launch",
+            "mainClass": "palindrome",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "print_binary_strings",
+            "request": "launch",
+            "mainClass": "print_binary_strings",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "print_factorial_of_a_number",
+            "request": "launch",
+            "mainClass": "print_factorial_of_a_number",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "print_fibonacci_numbers",
+            "request": "launch",
+            "mainClass": "print_fibonacci_numbers",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "print_numbers_in_decreasing_order",
+            "request": "launch",
+            "mainClass": "print_numbers_in_decreasing_order",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "print_numbers_in_increasing_order",
+            "request": "launch",
+            "mainClass": "print_numbers_in_increasing_order",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "print_sum_of_first_natural_numbers",
+            "request": "launch",
+            "mainClass": "print_sum_of_first_natural_numbers",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "print_triplets",
+            "request": "launch",
+            "mainClass": "print_triplets",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "print_x_to_power_n",
+            "request": "launch",
+            "mainClass": "print_x_to_power_n",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "push_at_bottom_of_stack",
+            "request": "launch",
+            "mainClass": "push_at_bottom_of_stack",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "quick_sort",
+            "request": "launch",
+            "mainClass": "quick_sort",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "remove_duplicates_in_a_string",
+            "request": "launch",
+            "mainClass": "remove_duplicates_in_a_string",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "reverse_a_stack",
+            "request": "launch",
+            "mainClass": "reverse_a_stack",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "reverse_a_string",
+            "request": "launch",
+            "mainClass": "reverse_a_string",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "reverse_an_array",
+            "request": "launch",
+            "mainClass": "reverse_an_array",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "reverse_of_arraylist",
+            "request": "launch",
+            "mainClass": "reverse_of_arraylist",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "roman_to_int",
+            "request": "launch",
+            "mainClass": "roman_to_int",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "running_comparison",
+            "request": "launch",
+            "mainClass": "running_comparison",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "search_element_in_array",
+            "request": "launch",
+            "mainClass": "search_element_in_array",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "search_in_a_rotated_sorted_array",
+            "request": "launch",
+            "mainClass": "search_in_a_rotated_sorted_array",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "set_ith_bit",
+            "request": "launch",
+            "mainClass": "set_ith_bit",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "stacks_using_JCF",
+            "request": "launch",
+            "mainClass": "stacks_using_JCF",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "stock_span_problem",
+            "request": "launch",
+            "mainClass": "stock_span_problem",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "string_compression",
+            "request": "launch",
+            "mainClass": "string_compression",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "substring_function",
+            "request": "launch",
+            "mainClass": "substring_function",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "sudokuClass",
+            "request": "launch",
+            "mainClass": "sudokuClass",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "take_discount_or_not",
+            "request": "launch",
+            "mainClass": "take_discount_or_not",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "testing",
+            "request": "launch",
+            "mainClass": "testing",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "testing2",
+            "request": "launch",
+            "mainClass": "testing2",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "tiling_problem",
+            "request": "launch",
+            "mainClass": "tiling_problem",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "trapped_rainwater",
+            "request": "launch",
+            "mainClass": "trapped_rainwater",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "traverse",
+            "request": "launch",
+            "mainClass": "traverse",
+            "projectName": "Learning-DS_31f67ed2"
+        },
+        {
+            "type": "java",
+            "name": "valid_parantheses",
+            "request": "launch",
+            "mainClass": "valid_parantheses",
+            "projectName": "Learning-DS_31f67ed2"
+        }
+    ]
+}
