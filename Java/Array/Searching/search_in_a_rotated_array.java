@@ -1,4 +1,4 @@
-class search_in_a_rotated_array {
+public class search_in_a_rotated_array {
     public static int searching(int arr[], int key) {
         int low = 0;
         int high = arr.length - 1;
